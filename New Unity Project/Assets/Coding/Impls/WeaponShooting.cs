@@ -1,37 +1,46 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponShooting : MonoBehaviour
 {
     public GameObject player;
+    private Rigidbody2D playerRigidBody;
     public WeaponBase armaBase;
-    private Rigidbody2D rigidbodyPlayer;
     private Vector2 coordsRaton;
     private Vector2 playercoords;
     private Vector2 normalizedCoords;
-    // Start is called before the first frame update
+    private bool disparando = false;
+    // Update is called once per frame
     void Start()
     {
-        
+        playerRigidBody = player.GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) {
+        if (PlayerControls.isShooting())
+        {
             playercoords = player.transform.position;
             coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            rigidbodyPlayer = player.GetComponent<Rigidbody2D>();
             normalizedCoords = (playercoords - coordsRaton).normalized;
-
-            Debug.Log("RATON: " + coordsRaton);
-            Debug.Log("JUGADOR: " + playercoords);
-            Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
-
-
-            rigidbodyPlayer.AddForce(normalizedCoords*armaBase.retroceso*0.5f, ForceMode2D.Impulse);
-
+            disparando = true;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (disparando)
+        {
+            playerRigidBody.AddForce(normalizedCoords * armaBase.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
+            disparando = false;
+        }
+    }
+
+    private void DebugDatos()
+    {
+        //Debug.Log("RATON: " + coordsRaton);
+        //Debug.Log("JUGADOR: " + playercoords);
+        //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
     }
 }

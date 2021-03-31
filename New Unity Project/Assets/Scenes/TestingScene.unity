@@ -197,12 +197,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975715668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604427183
 GameObject:
@@ -261,8 +261,9 @@ GameObject:
   - component: {fileID: 1715581404}
   - component: {fileID: 1715581403}
   - component: {fileID: 1715581406}
+  - component: {fileID: 1715581407}
   m_Layer: 0
-  m_Name: goblinspriteo
+  m_Name: Bung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,14 +282,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 5
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1715581404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -369,6 +370,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.92, y: 2.56}
   m_Direction: 0
+--- !u!114 &1715581407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715581402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8966b8578e4a43e4f94962a858405d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 30
+  velocidadMaxima: 60
+  alturaSalto: 13.5
 --- !u!1 &1804042966
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,8 +488,8 @@ Transform:
   m_GameObject: {fileID: 1804042966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3, z: 0}
-  m_LocalScale: {x: 25, y: 3, z: 1}
+  m_LocalScale: {x: 500, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
