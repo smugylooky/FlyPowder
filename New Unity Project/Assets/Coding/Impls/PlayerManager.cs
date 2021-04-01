@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public float alturaSalto;
     private float velocidadActual = 0.0f;
     bool jumping = false;
+    bool onair = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,15 +35,15 @@ public class PlayerManager : MonoBehaviour
                 velocidadActual = 0;
             }
         }
-        if (PlayerControls.isJumping())
+        if (PlayerControls.isJumping() && !onair)
         {
             jumping = true;
+            onair = true;
         }
     }
 
     private void FixedUpdate()
     {
-        Debug.Log(velocidadActual * Time.fixedDeltaTime * 50);
         if (Mathf.Abs(velocidadActual * Time.fixedDeltaTime * 50) > velocidadMaxima)
         {
             velocidadActual = velocidadActual / Mathf.Abs(velocidadActual) * velocidadMaxima;
@@ -56,5 +57,13 @@ public class PlayerManager : MonoBehaviour
             jumping = false;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "terreno")
+        {
+            onair = false;
+        }
     }
 }
