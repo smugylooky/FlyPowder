@@ -20,25 +20,25 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerControls.isMovingRight())
+        velocidadActual = 0;
+        if (!onair)
         {
-            velocidadActual = velocidad;
-        }
-        else
-        {
-            if (PlayerControls.isMovingLeft())
+            if (PlayerControls.isMovingRight())
             {
-                velocidadActual = -velocidad;
+                velocidadActual = velocidad;
             }
             else
             {
-                velocidadActual = 0;
+                if (PlayerControls.isMovingLeft())
+                {
+                    velocidadActual = -velocidad;
+                }
             }
-        }
-        if (PlayerControls.isJumping() && !onair)
-        {
-            jumping = true;
-            onair = true;
+            if (PlayerControls.isJumping() && !onair)
+            {
+                jumping = true;
+                onair = true;
+            }
         }
     }
 
