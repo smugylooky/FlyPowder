@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2093c497b7ad72a469c9f3ac56eac4cb, type: 3}
   m_Name: Glock
   m_EditorClassIdentifier: 
-  nombre: Glock
-  descripcion: Semi bastante guapa
+  nombre: "Arma semiautom\xE1tica"
+  descripcion: "Nueva arma semiautom\xE1tica creada."
   balasCargadorMax: 8
-  balasCargador: 8
   tipoDisparo: 1
   tiempoRecarga: 3.5
   retroceso: 10

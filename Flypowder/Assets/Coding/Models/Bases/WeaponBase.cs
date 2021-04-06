@@ -26,7 +26,8 @@ public class WeaponBase : ScriptableObject
     public string descripcion;
     public int balasCargadorMax;
     public int tipoDisparo;
-    public double tiempoRecarga;
+    public float tiempoRecarga;
+    public float tiempoEntreDisparos;
     public float retroceso;
     public Sprite spriteArma;
    
