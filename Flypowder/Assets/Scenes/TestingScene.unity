@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 1715581408}
   m_Layer: 0
   m_Name: Bung
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,11 +624,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715581402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6804c1cac6255e94f9af089b1abba805, type: 3}
+  m_Script: {fileID: 11500000, guid: 64a84abc459e7a94bab6242f7a7ae844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplicadorRetroceso: 1
-  armaBase: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
+  armaEquipada: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
 --- !u!1 &1804042966
 GameObject:
   m_ObjectHideFlags: 0
