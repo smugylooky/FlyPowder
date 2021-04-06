@@ -64,14 +64,6 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "terreno")
-        {
-            onair = false;
-            onground = true;
-        }
-    }*/
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "terreno")

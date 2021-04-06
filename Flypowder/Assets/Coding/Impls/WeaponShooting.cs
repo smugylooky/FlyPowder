@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WeaponShooting : MonoBehaviour
 {
-    public GameObject player;
+    public float multiplicadorRetroceso;
     private Rigidbody2D playerRigidBody;
     public WeaponBase armaBase;
     private Vector2 coordsRaton;
@@ -15,13 +15,13 @@ public class WeaponShooting : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        playerRigidBody = player.GetComponent<Rigidbody2D>();
+        playerRigidBody = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
         if (PlayerControls.isShooting())
         {
-            playercoords = player.transform.position;
+            playercoords = transform.position;
             coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             normalizedCoords = (playercoords - coordsRaton).normalized;
             disparando = true;
@@ -32,7 +32,7 @@ public class WeaponShooting : MonoBehaviour
     {
         if (disparando)
         {
-            playerRigidBody.AddForce(normalizedCoords * armaBase.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
+            playerRigidBody.AddForce(normalizedCoords * armaBase.retroceso * Time.fixedDeltaTime * 50 * multiplicadorRetroceso, ForceMode2D.Impulse);
             disparando = false;
         }
     }
