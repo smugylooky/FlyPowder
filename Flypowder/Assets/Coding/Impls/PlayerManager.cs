@@ -5,22 +5,25 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
+    private float lastRBSpeed;
     public float velocidad;
     public float velocidadMaxima;
     public float alturaSalto;
-    private float velocidadActual = 0.0f;
+    private float velocidadActual;
     bool jumping = false;
     bool onair = false;
     // Start is called before the first frame update
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        velocidadActual = 0.0f;
+        lastRBSpeed = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        velocidadActual = 0;
+        velocidadActual = lastRBSpeed;
         if (!onair)
         {
             if (PlayerControls.isMovingRight())
@@ -57,13 +60,42 @@ public class PlayerManager : MonoBehaviour
             jumping = false;
         }
 
+        lastRBSpeed = playerRigidBody.velocity.x;
+
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "terreno")
+        if (collision.gameObject.tag == "terreno")
+        {
+            onair = false;
+            onground = true;
+        }
+    }*/
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "terreno")
         {
             onair = false;
         }
+        if (collision.gameObject.tag == "plataforma")
+        {
+            foreach (ContactPoint2D hitPos in collision.contacts)
+            {
+                if (hitPos.normal.y > 0 && onair)
+                {
+                    onair = false;
+                }
+            }
+        }
     }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if ((collision.gameObject.tag == "terreno" || collision.gameObject.tag == "plataforma") && !onair)
+        {
+            onair = true;
+        }
+    }
+
 }

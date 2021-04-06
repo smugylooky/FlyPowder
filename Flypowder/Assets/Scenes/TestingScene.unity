@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 580124689}
   m_Layer: 0
   m_Name: New Sprite (1)
-  m_TagString: terreno
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 1135228686}
   m_Layer: 0
   m_Name: New Sprite
-  m_TagString: terreno
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 1826237241}
   m_Layer: 0
   m_Name: New Sprite (2)
-  m_TagString: terreno
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
