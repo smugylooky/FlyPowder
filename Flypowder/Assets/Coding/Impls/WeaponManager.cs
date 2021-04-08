@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
+
+    public GameObject bala;
+
     private int municionActual;
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
@@ -41,7 +45,7 @@ public class WeaponManager : MonoBehaviour
         if (!hasArmaEquipada) { hasArmaEquipada = armaEquipada != null; }
         if (!recargando && hasArmaEquipada)
         {
-            if (PlayerControls.isShooting() && municionActual > 0)
+            if (PlayerControls.isShooting(armaEquipada.tipoDisparo) && municionActual > 0)
             {
                 playercoords = transform.position;
                 coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -62,11 +66,10 @@ public class WeaponManager : MonoBehaviour
         {
             if (!onShotCooldown)
             {
+                BulletSetup();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
-
                 municionActual--;
                 disparando = false;
-                Debug.Log(municionActual + "/" + armaEquipada.balasCargadorMax);
                 onShotCooldown = true;
                 StartCoroutine(EsperarEntreDisparos());
             }
@@ -79,12 +82,20 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    private void BulletSetup()
+    {
+        GameObject bullet = Instantiate(bala, new Vector2(transform.position.x, transform.position.y), new Quaternion());
+        //bullet.transform.rotation = Quaternion.LookRotation(-normalizedCoords);
+        Physics2D.IgnoreCollision(bullet.GetComponent<BoxCollider2D>(), this.GetComponent<BoxCollider2D>(), true);
+        //bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 2);
+        //bullet.SetActive(false); bullet.SetActive(true);
+        //Debug.Log(normalizedCoords + "////" + -normalizedCoords);
+    }
+
     private IEnumerator Recargar()
     {
         yield return new WaitForSeconds(armaEquipada.tiempoRecarga);
         municionActual = armaEquipada.balasCargadorMax;
-        Debug.Log("Ya se ha recargado");
-        Debug.Log(municionActual + "/" + armaEquipada.balasCargadorMax);
         recargando = false;
         onRecargaCooldown = false;
     }
@@ -92,8 +103,12 @@ public class WeaponManager : MonoBehaviour
     private IEnumerator EsperarEntreDisparos()
     {
         yield return new WaitForSeconds(armaEquipada.tiempoEntreDisparos);
-        Debug.Log("Ya se puede disparar de nuevo");
         onShotCooldown = false;
+    }
+
+    private void setArmaEquipada(WeaponBase armaEquipada)
+    {
+        this.armaEquipada = armaEquipada;
     }
     private void DebugDatos()
     {

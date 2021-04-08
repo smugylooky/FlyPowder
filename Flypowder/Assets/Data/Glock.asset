@@ -17,6 +17,6 @@ MonoBehaviour:
   balasCargadorMax: 8
   tipoDisparo: 1
   tiempoRecarga: 3.5
-  tiempoEntreDisparos: 0.2
+  tiempoEntreDisparos: 0.1
   retroceso: 10
   spriteArma: {fileID: 0}
