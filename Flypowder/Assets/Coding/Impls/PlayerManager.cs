@@ -26,15 +26,24 @@ public class PlayerManager : MonoBehaviour
         velocidadActual = lastRBSpeed;
         if (!onair)
         {
+
             if (PlayerControls.isMovingRight())
             {
                 velocidadActual = velocidad;
+                if (playerRigidBody.velocity.x > 0)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
             }
             else
             {
                 if (PlayerControls.isMovingLeft())
                 {
                     velocidadActual = -velocidad;
+                    if (playerRigidBody.velocity.x < 0)
+                    {
+                        GetComponent<SpriteRenderer>().flipX = false;
+                    }
                 }
             }
             if (PlayerControls.isJumping() && !onair)

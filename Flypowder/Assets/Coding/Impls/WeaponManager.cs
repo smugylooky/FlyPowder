@@ -84,12 +84,11 @@ public class WeaponManager : MonoBehaviour
 
     private void BulletSetup()
     {
-        GameObject bullet = Instantiate(bala, new Vector2(transform.position.x, transform.position.y), new Quaternion());
-        //bullet.transform.rotation = Quaternion.LookRotation(-normalizedCoords);
-        Physics2D.IgnoreCollision(bullet.GetComponent<BoxCollider2D>(), this.GetComponent<BoxCollider2D>(), true);
-        //bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 2);
-        //bullet.SetActive(false); bullet.SetActive(true);
-        //Debug.Log(normalizedCoords + "////" + -normalizedCoords);
+        GameObject bullet = Instantiate(bala);
+        bullet.transform.position = transform.position;
+        float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
+        bullet.transform.eulerAngles = new Vector3(0,0, -angle);
+        bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 50);
     }
 
     private IEnumerator Recargar()
