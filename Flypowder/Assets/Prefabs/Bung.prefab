@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armaEquipada: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
-  bala: {fileID: 0}
+  bala: {fileID: 5411581916928480881, guid: 3be0e6e1fcbc92b459b027b9d8528b6a, type: 3}
 --- !u!50 &5148761492426203660
 Rigidbody2D:
   serializedVersion: 4

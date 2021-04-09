@@ -6,14 +6,9 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
-<<<<<<< Updated upstream
 
     public GameObject bala;
-
-    private int municionActual;
-=======
     private static int municionActual;
->>>>>>> Stashed changes
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
     private Vector2 playercoords;
