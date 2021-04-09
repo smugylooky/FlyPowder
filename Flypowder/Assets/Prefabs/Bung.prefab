@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5148761491418099328}
   - component: {fileID: 5148761491418099329}
   - component: {fileID: 5148761491418099330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 5148761492426203660}
   - component: {fileID: 5148761492426203657}
   - component: {fileID: 5148761492426203703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bung
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armaEquipada: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
+  bala: {fileID: 0}
 --- !u!50 &5148761492426203660
 Rigidbody2D:
   serializedVersion: 4

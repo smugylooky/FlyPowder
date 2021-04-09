@@ -42,14 +42,24 @@ public class WeaponManager : MonoBehaviour
     }
     void Update()
     {
-        if (!hasArmaEquipada) { hasArmaEquipada = armaEquipada != null; }
+        playercoords = transform.position;
+        coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        normalizedCoords = (playercoords - coordsRaton);
+        normalizedCoords = normalizedCoords.normalized;
+
+        if (-normalizedCoords.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+
         if (!recargando && hasArmaEquipada)
         {
             if (PlayerControls.isShooting(armaEquipada.tipoDisparo) && municionActual > 0)
             {
-                playercoords = transform.position;
-                coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                normalizedCoords = (playercoords - coordsRaton).normalized;
                 disparando = true;
             }
 
@@ -85,6 +95,7 @@ public class WeaponManager : MonoBehaviour
     private void BulletSetup()
     {
         GameObject bullet = Instantiate(bala);
+        Destroy(bullet, 2f);
         bullet.transform.position = transform.position;
         float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
         bullet.transform.eulerAngles = new Vector3(0,0, -angle);
