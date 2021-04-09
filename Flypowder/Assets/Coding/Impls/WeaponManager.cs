@@ -6,10 +6,14 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
+<<<<<<< Updated upstream
 
     public GameObject bala;
 
     private int municionActual;
+=======
+    private static int municionActual;
+>>>>>>> Stashed changes
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
     private Vector2 playercoords;
@@ -125,5 +129,10 @@ public class WeaponManager : MonoBehaviour
         //Debug.Log("RATON: " + coordsRaton);
         //Debug.Log("JUGADOR: " + playercoords);
         //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
+    }
+
+    public static int GetMunicionActual() {
+
+        return municionActual;
     }
 }
