@@ -7,7 +7,8 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private float lastRBSpeed;
     public float velocidad;
-    public float velocidadMaxima;
+    public float velocidadMaximaG;
+    public float velocidadMaximaA;
     public float alturaSalto;
     private float velocidadActual;
     bool jumping = false;
@@ -47,9 +48,15 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Mathf.Abs(velocidadActual * Time.fixedDeltaTime * 50) > velocidadMaxima)
+        Debug.Log(playerRigidBody.velocity.x);
+        if (!onair && Mathf.Abs(playerRigidBody.velocity.x) > velocidadMaximaG)
         {
-            velocidadActual = velocidadActual / Mathf.Abs(velocidadActual) * velocidadMaxima;
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x > 0 ? velocidadMaximaG : -velocidadMaximaG, playerRigidBody.velocity.y);
+        }
+
+        if (onair && Mathf.Abs(playerRigidBody.velocity.x) > velocidadMaximaA)
+        {
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x > 0 ? velocidadMaximaA : -velocidadMaximaA, playerRigidBody.velocity.y);
         }
 
         playerRigidBody.AddForce(Vector2.right * velocidadActual * Time.fixedDeltaTime * 50);
