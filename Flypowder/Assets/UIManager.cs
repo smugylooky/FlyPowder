@@ -65,8 +65,15 @@ public class UIManager : MonoBehaviour
 
     public void OnSalirClicked() {
         Time.timeScale = 1f;
-        //SceneManager.LoadScene("TestingScene");
         Application.Quit();
 
     }
+    public void OnMenuClicked()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Inicio");
+
+    }
+
+
 }
