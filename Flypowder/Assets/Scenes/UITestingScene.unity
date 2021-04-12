@@ -1854,6 +1854,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bung
       objectReference: {fileID: 0}
+    - target: {fileID: 5148761492426203702, guid: 6dd3a8240b7f6c543ad3960f224f9cef,
+        type: 3}
+      propertyPath: armaEquipada
+      value: 
+      objectReference: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd3a8240b7f6c543ad3960f224f9cef, type: 3}
 --- !u!1 &1999406469

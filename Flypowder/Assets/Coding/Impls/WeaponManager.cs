@@ -6,7 +6,6 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
-
     public GameObject bala;
     private static int municionActual;
     private Rigidbody2D playerRigidBody;

@@ -48,7 +48,6 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
         if (!onair && Mathf.Abs(playerRigidBody.velocity.x) > velocidadMaximaG)
         {
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x > 0 ? velocidadMaximaG : -velocidadMaximaG, playerRigidBody.velocity.y);

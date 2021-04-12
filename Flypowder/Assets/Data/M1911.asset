@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2093c497b7ad72a469c9f3ac56eac4cb, type: 3}
+  m_Name: M1911
+  m_EditorClassIdentifier: 
+  nombre: "Arma semiautom\xE1tica"
+  descripcion: "Nueva arma semiautom\xE1tica creada."
+  balasCargadorMax: 15
+  tipoDisparo: 1
+  tiempoRecarga: 1.5
+  tiempoEntreDisparos: 0.1
+  retroceso: 50
+  spriteArma: {fileID: 0}
