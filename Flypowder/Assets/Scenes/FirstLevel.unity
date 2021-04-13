@@ -4811,10 +4811,10 @@ Transform:
   - {fileID: 1597072113}
   - {fileID: 610074888}
   - {fileID: 357812638}
+  - {fileID: 264279959}
   - {fileID: 517146077}
   - {fileID: 660139896}
   - {fileID: 1327543699}
-  - {fileID: 264279959}
   - {fileID: 138245353}
   - {fileID: 533493065}
   - {fileID: 1612665265}
@@ -5067,11 +5067,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BungV2
       objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813002, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1341010367407813003, guid: a13c8484afb83f141b3cc60b5884039d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5126,31 +5121,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813012, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813012, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813012, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.90625
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813012, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341010367407813012, guid: a13c8484afb83f141b3cc60b5884039d,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.8125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a13c8484afb83f141b3cc60b5884039d, type: 3}

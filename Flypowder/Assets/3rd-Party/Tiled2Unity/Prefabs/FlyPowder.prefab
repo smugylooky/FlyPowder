@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7903872036657824330}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 7542972777472520208}
   m_Layer: 0
   m_Name: Escenario
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 3385878643471929933}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 9217063897108607085}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 5048841778654678776}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 5053970371424419536}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 3466817407467352578}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 1111527758548511036}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 8600791217712997991}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1212,7 +1212,7 @@ GameObject:
   - component: {fileID: 4220701200101071332}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 4240470437848616393}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 1795328743941418819}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1569,7 +1569,7 @@ GameObject:
   - component: {fileID: 8647182298390103238}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 2382252464643143093}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 1385434125958058794}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1924,7 +1924,7 @@ GameObject:
   - component: {fileID: 2093821757829604557}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2098,7 +2098,7 @@ GameObject:
   - component: {fileID: 7760483054217731093}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 7800236560499274761}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2282,7 +2282,7 @@ GameObject:
   - component: {fileID: 8595252104431780483}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2374,7 +2374,7 @@ GameObject:
   - component: {fileID: 3819415245899648391}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2466,7 +2466,7 @@ GameObject:
   - component: {fileID: 640194436611574993}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2640,7 +2640,7 @@ GameObject:
   - component: {fileID: 3101045487412878072}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2732,7 +2732,7 @@ GameObject:
   - component: {fileID: 5290366221629330188}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2824,7 +2824,7 @@ GameObject:
   - component: {fileID: 2352327164485080169}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2916,7 +2916,7 @@ GameObject:
   - component: {fileID: 7594416274513155579}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 2530457637887446769}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3100,7 +3100,7 @@ GameObject:
   - component: {fileID: 3221384322873764689}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3192,7 +3192,7 @@ GameObject:
   - component: {fileID: 326827155181199332}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3284,7 +3284,7 @@ GameObject:
   - component: {fileID: 8432177828360270132}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3376,7 +3376,7 @@ GameObject:
   - component: {fileID: 6745637134924332437}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3468,7 +3468,7 @@ GameObject:
   - component: {fileID: 6059703844701617743}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3560,7 +3560,7 @@ GameObject:
   - component: {fileID: 3971387254719234237}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3650,7 +3650,7 @@ GameObject:
   - component: {fileID: 4116897432851842561}
   m_Layer: 0
   m_Name: Colisiones
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3706,7 +3706,7 @@ GameObject:
   - component: {fileID: 5548006412869707459}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3798,7 +3798,7 @@ GameObject:
   - component: {fileID: 7150267771837943558}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 5698708451802240272}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3982,7 +3982,7 @@ GameObject:
   - component: {fileID: 5579620195139582309}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4074,7 +4074,7 @@ GameObject:
   - component: {fileID: 4475779125179343742}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4164,7 +4164,7 @@ GameObject:
   - component: {fileID: 3134044964987152332}
   m_Layer: 0
   m_Name: FlyPowder
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4226,7 +4226,7 @@ GameObject:
   - component: {fileID: 7162181897775503916}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4318,7 +4318,7 @@ GameObject:
   - component: {fileID: 5596483810963824372}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4410,7 +4410,7 @@ GameObject:
   - component: {fileID: 3021953081958132592}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4502,7 +4502,7 @@ GameObject:
   - component: {fileID: 5692687795959274891}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4594,7 +4594,7 @@ GameObject:
   - component: {fileID: 8893834317742126739}
   m_Layer: 0
   m_Name: Medieval_tiles_free2
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4684,7 +4684,7 @@ GameObject:
   - component: {fileID: 3405382006461927760}
   m_Layer: 0
   m_Name: Miscelania
-  m_TagString: Untagged
+  m_TagString: plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
