@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
-    private AudioClip weaponSFX,deathSFX,winSFX,jumpSFX,walkingSFX;
+    private AudioClip weaponSFX,deathSFX,winSFX,jumpSFX,walkingSFX, shootingSFX, reloadSFX;
     private static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,8 @@ public class SFXManager : MonoBehaviour
         winSFX = Resources.Load<AudioClip>("win");
         jumpSFX = Resources.Load<AudioClip>("jump");
         walkingSFX = Resources.Load<AudioClip>("walking");
+        shootingSFX = Resources.Load<AudioClip>("shootingDefault");
+        reloadSFX = Resources.Load<AudioClip>("reloadDefault");
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -44,5 +46,15 @@ public class SFXManager : MonoBehaviour
     public void PlayWalking()
     {
         audioSrc.PlayOneShot(walkingSFX);
+    }
+
+    public void playShootingDefault()
+    {
+        audioSrc.PlayOneShot(shootingSFX);
+    }
+
+    public void playReloadingingDefault()
+    {
+        audioSrc.PlayOneShot(reloadSFX);
     }
 }

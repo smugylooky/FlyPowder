@@ -7,6 +7,7 @@ public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
     public GameObject bala;
+    private SFXManager sfx;
     private static int municionActual;
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
@@ -25,6 +26,7 @@ public class WeaponManager : MonoBehaviour
         recargando = false;
         onShotCooldown = false;
         onRecargaCooldown = false;
+        sfx = GameObject.Find("SFXManager").GetComponent<SFXManager>();
         //arma = PlayerInventory.getEquippedWeapon();
         if (armaEquipada != null)
         {
@@ -75,6 +77,7 @@ public class WeaponManager : MonoBehaviour
             if (!onShotCooldown)
             {
                 BulletSetup();
+                sfx.playShootingDefault();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
                 municionActual--;
                 disparando = false;
@@ -86,6 +89,7 @@ public class WeaponManager : MonoBehaviour
         if (recargando && !onRecargaCooldown) 
         {
             onRecargaCooldown = true;
+            sfx.playReloadingingDefault();
             StartCoroutine(Recargar());
         }
     }
