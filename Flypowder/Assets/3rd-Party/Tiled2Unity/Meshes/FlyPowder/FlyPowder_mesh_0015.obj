@@ -1,0 +1,24 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'FlyPowder_mesh_0015.obj'
+
+# Vertices (Count = 4)
+v -15 -4 0
+v -16 -4 0
+v -16 -3 0
+v -15 -3 0
+
+# Texture cooridinates (Count = 4)
+vt 0.671875 0.3398058
+vt 0.71875 0.3398058
+vt 0.71875 0.3980582
+vt 0.671875 0.3980582
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g FlyPowder_mesh_0015
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+

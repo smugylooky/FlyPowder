@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
+    private Animator playerAnimator;
     private float lastRBSpeed;
     public float velocidad;
     public float velocidadMaximaG;
@@ -17,6 +18,7 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
         velocidadActual = 0.0f;
         lastRBSpeed = 0.0f;
     }
@@ -27,19 +29,31 @@ public class PlayerManager : MonoBehaviour
         velocidadActual = lastRBSpeed;
         if (!onair)
         {
+            if (velocidadActual.Equals(0)) 
+            {
+                playerAnimator.SetBool("Is Running", false);
+            } 
             if (PlayerControls.isMovingRight())
             {
+                playerAnimator.SetTrigger("Running");
+                playerAnimator.SetBool("Is Running", true);
                 velocidadActual = velocidad;
             }
             else
             {
                 if (PlayerControls.isMovingLeft())
                 {
+                    playerAnimator.SetTrigger("Running");
+                    playerAnimator.SetBool("Is Running", true);
                     velocidadActual = -velocidad;
                 }
             }
+
+
             if (PlayerControls.isJumping() && !onair)
             {
+                playerAnimator.SetTrigger("Jumping");
+                playerAnimator.SetBool("On Air", true);
                 jumping = true;
                 onair = true;
             }
@@ -75,6 +89,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "terreno")
         {
             onair = false;
+            playerAnimator.SetBool("On Air",false);
         }
         if (collision.gameObject.tag == "plataforma")
         {
@@ -83,6 +98,7 @@ public class PlayerManager : MonoBehaviour
                 if (hitPos.normal.y > 0 && onair)
                 {
                     onair = false;
+                    playerAnimator.SetBool("On Air", false);
                 }
             }
         }
