@@ -61,7 +61,7 @@ public class WeaponManager : MonoBehaviour
                 disparando = true;
             }
 
-            if (PlayerControls.isReloading() && municionActual < armaEquipada.balasCargadorMax)
+            if ((PlayerControls.isReloading() && municionActual < armaEquipada.balasCargadorMax) || municionActual == 0)
             {
                 recargando = true;
             }
