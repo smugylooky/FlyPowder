@@ -37,16 +37,22 @@ public class PlayerManager : MonoBehaviour
             } 
             if (PlayerControls.isMovingRight())
             {
-                playerAnimator.SetTrigger("Running");
-                playerAnimator.SetBool("Is Running", true);
+                if (playerRigidBody.velocity.x > 3f)
+                {
+                    playerAnimator.SetTrigger("Running");
+                    playerAnimator.SetBool("Is Running", true);
+                }
                 velocidadActual = velocidad;
             }
             else
             {
                 if (PlayerControls.isMovingLeft())
                 {
-                    playerAnimator.SetTrigger("Running");
-                    playerAnimator.SetBool("Is Running", true);
+                    if (playerRigidBody.velocity.x < 3f)
+                    {
+                        playerAnimator.SetTrigger("Running");
+                        playerAnimator.SetBool("Is Running", true);
+                    }
                     velocidadActual = -velocidad;
                 }
             }
@@ -104,6 +110,15 @@ public class PlayerManager : MonoBehaviour
                     playerAnimator.SetBool("On Air", false);
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Stage hazard")
+        {
+            Debug.Log("HIT");            
+            this.transform.position = new Vector2(-65.51f, 6.87f);
         }
     }
 

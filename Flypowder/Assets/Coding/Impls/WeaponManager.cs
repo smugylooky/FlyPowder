@@ -15,7 +15,7 @@ public class WeaponManager : MonoBehaviour
     private bool disparando;
     private bool hasArmaEquipada;
     private bool recargando;
-    private bool onRecargaCooldown;
+    private static bool onRecargaCooldown;
     private bool onShotCooldown;
     //bool que compruebe que se ha disparado fuera del intervalo entre disparos
 
@@ -128,5 +128,9 @@ public class WeaponManager : MonoBehaviour
     public static int GetMunicionActual() {
 
         return municionActual;
+    }
+
+    public static bool isRecharging() {
+        return onRecargaCooldown;
     }
 }

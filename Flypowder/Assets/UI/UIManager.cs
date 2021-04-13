@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 {
     public Text puntosVida;
     public Text actualAmmo;
+    public Text recargandoText;
     public bool hit = false;
     private int hp = 3;
     private int municionRestante;
@@ -23,7 +24,7 @@ public class UIManager : MonoBehaviour
         puntosVida.text = "" + hp;
         municionRestante = WeaponManager.GetMunicionActual();
         actualAmmo.text = "" + municionRestante;
-        
+        recargandoText.enabled = false;
     }
 
     // Update is called once per frame
@@ -32,6 +33,15 @@ public class UIManager : MonoBehaviour
         municionRestante = WeaponManager.GetMunicionActual();
         actualAmmo.text = "" + municionRestante;
         puntosVida.text = "" + hp;
+
+        if (WeaponManager.isRecharging()) 
+        {
+            recargandoText.enabled = true;
+        }
+        else
+        {
+            recargandoText.enabled = false;
+        }
     }
     public void onHitTaken() {
 
