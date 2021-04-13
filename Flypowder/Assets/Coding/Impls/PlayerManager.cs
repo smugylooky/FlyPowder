@@ -14,11 +14,13 @@ public class PlayerManager : MonoBehaviour
     private float velocidadActual;
     bool jumping = false;
     bool onair = false;
+    private SFXManager sfxManager;
     // Start is called before the first frame update
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+        sfxManager = FindObjectOfType<SFXManager>();
         velocidadActual = 0.0f;
         lastRBSpeed = 0.0f;
     }
@@ -76,6 +78,7 @@ public class PlayerManager : MonoBehaviour
 
         if (jumping)
         {
+            sfxManager.PlayJump();
             playerRigidBody.AddForce(Vector2.up * alturaSalto * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
             jumping = false;
         }
