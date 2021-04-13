@@ -30,5 +30,6 @@ public class WeaponBase : ScriptableObject
     public float tiempoEntreDisparos;
     public float retroceso;
     public Sprite spriteArma;
+    public string sfx;
    
 }
