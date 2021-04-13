@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 1341010367407813013}
   - component: {fileID: 1341010367407813014}
   - component: {fileID: 1341010367407813015}
-  - component: {fileID: 1341010367407813012}
   - component: {fileID: 4458359294422689338}
   m_Layer: 8
   m_Name: BungV2
@@ -242,22 +241,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &1341010367407813012
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341010367407813000}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.90625}
-  m_Size: {x: 1.75, y: 1.8125}
-  m_Direction: 0
 --- !u!70 &4458359294422689338
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

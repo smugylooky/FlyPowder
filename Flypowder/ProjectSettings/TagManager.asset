@@ -6,6 +6,7 @@ TagManager:
   tags:
   - terreno
   - plataforma
+  - Stage hazard
   layers:
   - Default
   - TransparentFX

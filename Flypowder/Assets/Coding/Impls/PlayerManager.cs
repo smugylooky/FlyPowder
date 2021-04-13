@@ -115,9 +115,10 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("HIT");
         if (collision.gameObject.tag == "Stage hazard")
         {
-            Debug.Log("HIT");            
+                  
             this.transform.position = new Vector2(-65.51f, 6.87f);
         }
     }
