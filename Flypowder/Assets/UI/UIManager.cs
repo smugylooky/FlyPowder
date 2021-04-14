@@ -42,6 +42,8 @@ public class UIManager : MonoBehaviour
         {
             recargandoText.enabled = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) { OnPauseClicked(); }
     }
     public void onHitTaken() {
 
@@ -84,6 +86,7 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("Inicio");
 
     }
+
 
 
 }
