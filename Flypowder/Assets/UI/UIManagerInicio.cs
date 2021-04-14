@@ -20,7 +20,7 @@ public class UIManagerInicio : MonoBehaviour
     public void OnJugarClicked()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("UITestingScene");
+        SceneManager.LoadScene("FirstLevel");
 
 
     }

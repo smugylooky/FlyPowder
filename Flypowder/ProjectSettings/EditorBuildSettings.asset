@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestingScene.unity
     guid: f523370f1ede32443ae525d7e744db5d
   - enabled: 1
-    path: Assets/Scenes/UIControlesScene.unity
-    guid: b64ae696a7c5e944cb4351e6aa6e8aa4
+    path: Assets/Scenes/FirstLevel.unity
+    guid: 448887178ffab4540a347cb312f4f487
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

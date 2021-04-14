@@ -47,15 +47,6 @@ public class WeaponManager : MonoBehaviour
         normalizedCoords = (playercoords - coordsRaton);
         normalizedCoords = normalizedCoords.normalized;
 
-        if (-normalizedCoords.x > 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-
         if (!recargando && hasArmaEquipada)
         {
             if (PlayerControls.isShooting(armaEquipada.tipoDisparo) && municionActual > 0)
@@ -76,6 +67,15 @@ public class WeaponManager : MonoBehaviour
         {
             if (!onShotCooldown)
             {
+                if (-normalizedCoords.x > 0)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
+
                 BulletSetup();
                 sfx.playShootingDefault();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
@@ -98,7 +98,7 @@ public class WeaponManager : MonoBehaviour
     {
         GameObject bullet = Instantiate(bala);
         Destroy(bullet, 2f);
-        bullet.transform.position = transform.position;
+        bullet.transform.position = new Vector2(transform.position.x, transform.position.y + 0.5f);
         float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
         bullet.transform.eulerAngles = new Vector3(0,0, -angle);
         bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 50);

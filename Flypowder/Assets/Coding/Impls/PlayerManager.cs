@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour
     bool jumping = false;
     bool onair = false;
     private SFXManager sfxManager;
+    private float defaultFriction;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class PlayerManager : MonoBehaviour
         sfxManager = FindObjectOfType<SFXManager>();
         velocidadActual = 0.0f;
         lastRBSpeed = 0.0f;
+        defaultFriction = playerRigidBody.sharedMaterial.friction;
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class PlayerManager : MonoBehaviour
                 {
                     playerAnimator.SetTrigger("Running");
                     playerAnimator.SetBool("Is Running", true);
+                    GetComponent<SpriteRenderer>().flipX = true;
                 }
                 velocidadActual = velocidad;
             }
@@ -52,6 +55,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         playerAnimator.SetTrigger("Running");
                         playerAnimator.SetBool("Is Running", true);
+                        GetComponent<SpriteRenderer>().flipX = false;
                     }
                     velocidadActual = -velocidad;
                 }
@@ -87,6 +91,15 @@ public class PlayerManager : MonoBehaviour
             sfxManager.PlayJump();
             playerRigidBody.AddForce(Vector2.up * alturaSalto * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
             jumping = false;
+        }
+
+        if (onair) 
+        {
+            playerRigidBody.sharedMaterial.friction = 0;
+        }
+        else 
+        {
+            playerRigidBody.sharedMaterial.friction = defaultFriction;
         }
 
         lastRBSpeed = playerRigidBody.velocity.x;
