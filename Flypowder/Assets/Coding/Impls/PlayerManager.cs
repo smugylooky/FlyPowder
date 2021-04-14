@@ -90,17 +90,11 @@ public class PlayerManager : MonoBehaviour
         {
             sfxManager.PlayJump();
             playerRigidBody.AddForce(Vector2.up * alturaSalto * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x / 0.75f, playerRigidBody.velocity.y);
             jumping = false;
         }
 
-        if (onair) 
-        {
-            playerRigidBody.sharedMaterial.friction = 0;
-        }
-        else 
-        {
-            playerRigidBody.sharedMaterial.friction = defaultFriction;
-        }
+   
 
         lastRBSpeed = playerRigidBody.velocity.x;
 

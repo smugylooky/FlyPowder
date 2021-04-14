@@ -21,6 +21,7 @@ public class WeaponBase : ScriptableObject
         tiempo de recarga (total o por bala, segun att de arriba)
         retroceso
         sprite asociado
+        sonidos al disparar
     */
     public string nombre;
     public string descripcion;
