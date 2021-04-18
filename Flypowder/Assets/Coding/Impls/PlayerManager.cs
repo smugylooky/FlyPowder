@@ -138,4 +138,16 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void ShallBeFlippedOnShot(Vector2 normalizedCoords)
+    {
+        if (-normalizedCoords.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+    }
+
 }

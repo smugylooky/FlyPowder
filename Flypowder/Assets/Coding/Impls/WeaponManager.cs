@@ -8,6 +8,7 @@ public class WeaponManager : MonoBehaviour
     public WeaponBase armaEquipada;
     public GameObject bala;
     private SFXManager sfx;
+    private SpriteRenderer weaponSprite;
     private static int municionActual;
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
@@ -22,23 +23,9 @@ public class WeaponManager : MonoBehaviour
 
     void Start()
     {
-        disparando = false;
-        recargando = false;
-        onShotCooldown = false;
-        onRecargaCooldown = false;
+        InitAllVars();
         sfx = GameObject.Find("SFXManager").GetComponent<SFXManager>();
-        //arma = PlayerInventory.getEquippedWeapon();
-        if (armaEquipada != null)
-        {
-            hasArmaEquipada = true;
-            municionActual = armaEquipada.balasCargadorMax;
-        }
-        else
-        {
-            hasArmaEquipada = false;
-        }
-
-        playerRigidBody = GetComponent<Rigidbody2D>();
+        playerRigidBody = GetComponentInParent<Rigidbody2D>();
     }
     void Update()
     {
@@ -46,6 +33,9 @@ public class WeaponManager : MonoBehaviour
         coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         normalizedCoords = (playercoords - coordsRaton);
         normalizedCoords = normalizedCoords.normalized;
+
+        transform.eulerAngles = new Vector3(0, 0, -(Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg) + 90f);
+        if (normalizedCoords.x > 0) { weaponSprite.flipY = false; } else { weaponSprite.flipY = true; }
 
         if (!recargando && hasArmaEquipada)
         {
@@ -67,15 +57,7 @@ public class WeaponManager : MonoBehaviour
         {
             if (!onShotCooldown)
             {
-                if (-normalizedCoords.x > 0)
-                {
-                    GetComponent<SpriteRenderer>().flipX = true;
-                }
-                else
-                {
-                    GetComponent<SpriteRenderer>().flipX = false;
-                }
-
+                GetComponentInParent<PlayerManager>().ShallBeFlippedOnShot(normalizedCoords);
                 BulletSetup();
                 sfx.playShootingDefault();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
@@ -98,7 +80,7 @@ public class WeaponManager : MonoBehaviour
     {
         GameObject bullet = Instantiate(bala);
         Destroy(bullet, 2f);
-        bullet.transform.position = new Vector2(transform.position.x, transform.position.y + 0.5f);
+        bullet.transform.position = this.transform.position;
         float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
         bullet.transform.eulerAngles = new Vector3(0,0, -angle);
         bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 50);
@@ -136,5 +118,31 @@ public class WeaponManager : MonoBehaviour
 
     public static bool isRecharging() {
         return onRecargaCooldown;
+    }
+
+    public void UpdateWeaponEquipped(WeaponBase weapon)
+    {
+        armaEquipada = weapon;
+        InitAllVars();
+    }
+
+    private void InitAllVars()
+    {
+        StopAllCoroutines();
+        disparando = false;
+        recargando = false;
+        onShotCooldown = false;
+        onRecargaCooldown = false;
+        weaponSprite = GetComponent<SpriteRenderer>();
+        if (armaEquipada != null)
+        {
+            hasArmaEquipada = true;
+            municionActual = armaEquipada.balasCargadorMax;
+            weaponSprite.sprite = armaEquipada.spriteArma;
+        }
+        else
+        {
+            hasArmaEquipada = false;
+        }
     }
 }
