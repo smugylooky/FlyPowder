@@ -32,5 +32,6 @@ public class WeaponBase : ScriptableObject
     public float retroceso;
     public Sprite spriteArma;
     public string sfx;
+
    
 }

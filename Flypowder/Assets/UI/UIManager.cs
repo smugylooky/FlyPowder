@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         puntosVida.text = "" + hp;
-        municionRestante = WeaponManager.GetMunicionActual();
+        municionRestante = WeaponManager.getMunicionActual();
         actualAmmo.text = "" + municionRestante;
         recargandoText.enabled = false;
     }
@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        municionRestante = WeaponManager.GetMunicionActual();
+        municionRestante = WeaponManager.getMunicionActual();
         actualAmmo.text = "" + municionRestante;
         puntosVida.text = "" + hp;
 

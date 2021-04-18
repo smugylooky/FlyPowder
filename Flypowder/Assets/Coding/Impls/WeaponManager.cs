@@ -9,17 +9,19 @@ public class WeaponManager : MonoBehaviour
     public GameObject bala;
     private SFXManager sfx;
     private SpriteRenderer weaponSprite;
+
+
     private static int municionActual;
     private Rigidbody2D playerRigidBody;
     private Vector2 coordsRaton;
     private Vector2 playercoords;
     private Vector2 normalizedCoords;
+
     private bool disparando;
     private bool hasArmaEquipada;
     private bool recargando;
     private static bool onRecargaCooldown;
     private bool onShotCooldown;
-    //bool que compruebe que se ha disparado fuera del intervalo entre disparos
 
     void Start()
     {
@@ -111,7 +113,7 @@ public class WeaponManager : MonoBehaviour
         //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
     }
 
-    public static int GetMunicionActual() {
+    public static int getMunicionActual() {
 
         return municionActual;
     }

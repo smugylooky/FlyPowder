@@ -122,7 +122,6 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("HIT");
         if (collision.gameObject.tag == "Stage hazard")
         {
                   

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: "Arma semiautom\xE1tica"
   descripcion: "Nueva arma semiautom\xE1tica creada."
-  balasCargadorMax: 8
-  tipoDisparo: 1
+  balasCargadorMax: 25
+  tipoDisparo: 0
   tiempoRecarga: 3.5
-  tiempoEntreDisparos: 0.1
+  tiempoEntreDisparos: 0.2
   retroceso: 10
-  spriteArma: {fileID: 0}
+  spriteArma: {fileID: -8140414472168925454, guid: 8e35ac46ffb7b61409668821ed52264e,
+    type: 3}
   sfx: M1911

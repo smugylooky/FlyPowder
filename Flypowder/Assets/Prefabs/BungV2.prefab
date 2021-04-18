@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 1341010367407813015}
   - component: {fileID: 4458359294422689338}
   - component: {fileID: 5263802759535126625}
+  - component: {fileID: 286705303534507601}
   m_Layer: 8
   m_Name: BungV2
   m_TagString: Player
@@ -270,6 +271,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &286705303534507601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341010367407813000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb140962c463c724eb946cc97c39d4ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5875695803289746034
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,8 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 3318937954836800289, guid: 8e35ac46ffb7b61409668821ed52264e,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -350,7 +362,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1578039108988273151
@@ -365,5 +377,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a84abc459e7a94bab6242f7a7ae844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armaEquipada: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
+  armaEquipada: {fileID: 0}
   bala: {fileID: 5411581916928480881, guid: 3be0e6e1fcbc92b459b027b9d8528b6a, type: 3}
