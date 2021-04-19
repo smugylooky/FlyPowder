@@ -31,13 +31,7 @@ public class WeaponManager : MonoBehaviour
     }
     void Update()
     {
-        playercoords = transform.position;
-        coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        normalizedCoords = (playercoords - coordsRaton);
-        normalizedCoords = normalizedCoords.normalized;
-
-        transform.eulerAngles = new Vector3(0, 0, -(Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg) + 90f);
-        if (normalizedCoords.x > 0) { weaponSprite.flipY = false; } else { weaponSprite.flipY = true; }
+        UpdateWeaponToMouseCoords();
 
         if (!recargando && hasArmaEquipada)
         {
@@ -53,19 +47,20 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+
     private void FixedUpdate()
     {
         if (disparando)
         {
             if (!onShotCooldown)
             {
-                GetComponentInParent<PlayerManager>().ShallBeFlippedOnShot(normalizedCoords);
                 BulletSetup();
-                sfx.playShootingDefault();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
+
                 municionActual--;
                 disparando = false;
                 onShotCooldown = true;
+
                 StartCoroutine(EsperarEntreDisparos());
             }
         }
@@ -74,52 +69,32 @@ public class WeaponManager : MonoBehaviour
         {
             onRecargaCooldown = true;
             sfx.playReloadingingDefault();
+
             StartCoroutine(Recargar());
         }
     }
 
+    private void UpdateWeaponToMouseCoords()
+    {
+        playercoords = transform.position;
+        coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        normalizedCoords = (playercoords - coordsRaton);
+        normalizedCoords = normalizedCoords.normalized;
+
+        transform.eulerAngles = new Vector3(0, 0, -(Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg) + 90f);
+        if (normalizedCoords.x > 0) { weaponSprite.flipY = false; } else { weaponSprite.flipY = true; }
+    }
+
     private void BulletSetup()
     {
+        GetComponentInParent<PlayerManager>().ShallBeFlippedOnShot(normalizedCoords);
         GameObject bullet = Instantiate(bala);
         Destroy(bullet, 2f);
         bullet.transform.position = this.transform.position;
         float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
         bullet.transform.eulerAngles = new Vector3(0,0, -angle);
         bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 50);
-    }
-
-    private IEnumerator Recargar()
-    {
-        yield return new WaitForSeconds(armaEquipada.tiempoRecarga);
-        municionActual = armaEquipada.balasCargadorMax;
-        recargando = false;
-        onRecargaCooldown = false;
-    }
-
-    private IEnumerator EsperarEntreDisparos()
-    {
-        yield return new WaitForSeconds(armaEquipada.tiempoEntreDisparos);
-        onShotCooldown = false;
-    }
-
-    private void setArmaEquipada(WeaponBase armaEquipada)
-    {
-        this.armaEquipada = armaEquipada;
-    }
-    private void DebugDatos()
-    {
-        //Debug.Log("RATON: " + coordsRaton);
-        //Debug.Log("JUGADOR: " + playercoords);
-        //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
-    }
-
-    public static int getMunicionActual() {
-
-        return municionActual;
-    }
-
-    public static bool isRecharging() {
-        return onRecargaCooldown;
+        sfx.playShootingDefault();
     }
 
     public void UpdateWeaponEquipped(WeaponBase weapon)
@@ -147,4 +122,40 @@ public class WeaponManager : MonoBehaviour
             hasArmaEquipada = false;
         }
     }
+
+        private void setArmaEquipada(WeaponBase armaEquipada)
+        {
+            this.armaEquipada = armaEquipada;
+        }
+        private void DebugDatos()
+        {
+            //Debug.Log("RATON: " + coordsRaton);
+            //Debug.Log("JUGADOR: " + playercoords);
+            //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
+        }
+
+        public static int getMunicionActual()
+        {
+
+            return municionActual;
+        }
+
+        public static bool isRecharging()
+        {
+            return onRecargaCooldown;
+        }
+
+        private IEnumerator Recargar()
+        {
+            yield return new WaitForSeconds(armaEquipada.tiempoRecarga);
+            municionActual = armaEquipada.balasCargadorMax;
+            recargando = false;
+            onRecargaCooldown = false;
+        }
+
+        private IEnumerator EsperarEntreDisparos()
+        {
+            yield return new WaitForSeconds(armaEquipada.tiempoEntreDisparos);
+            onShotCooldown = false;
+        }
 }

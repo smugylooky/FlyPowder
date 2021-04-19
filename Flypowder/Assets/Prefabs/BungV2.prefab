@@ -204,10 +204,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8966b8578e4a43e4f94962a858405d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  friccionDefault: 1.75
+  deslizOnCrouch: 0.1
   velocidad: 90
   velocidadMaximaG: 16
   velocidadMaximaA: 40
   alturaSalto: 17.5
+  saltoAlturaY: 1.3
+  saltoLargoY: 0.9
 --- !u!50 &1341010367407813015
 Rigidbody2D:
   serializedVersion: 4

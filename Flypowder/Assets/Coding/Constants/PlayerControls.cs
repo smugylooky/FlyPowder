@@ -28,4 +28,9 @@ public class PlayerControls
     public static bool isReloading() {
         return Input.GetKeyDown(KeyCode.R);
     }
+
+    public static bool isCrouching()
+    {
+        return Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+    }
 }
