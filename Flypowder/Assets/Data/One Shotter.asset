@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2093c497b7ad72a469c9f3ac56eac4cb, type: 3}
   m_Name: One Shotter
   m_EditorClassIdentifier: 
-  nombre: 
-  descripcion: 
-  balasCargadorMax: 0
+  nombre: One Shotter
+  descripcion: Gran disparo, pero solo una bala
+  balasCargadorMax: 1
   tipoDisparo: 1
-  tiempoRecarga: 0
-  tiempoEntreDisparos: 0
-  retroceso: 0
-  spriteArma: {fileID: 0}
+  tiempoRecarga: 3
+  tiempoEntreDisparos: 1
+  retroceso: 45
+  spriteArma: {fileID: 5967756490848770951, guid: 8e35ac46ffb7b61409668821ed52264e,
+    type: 3}
   sfx: 
