@@ -17,14 +17,14 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "armaPickup")
         {
-            if (inside) return;
+            if (inside) { return; }
+            inside = true;
             WeaponBase armaNueva = collision.gameObject.GetComponent<WeaponObject>().getWeapon();
 
             if (armaEquipada == null)
@@ -34,11 +34,10 @@ public class InventoryManager : MonoBehaviour
             else
             {
                collision.gameObject.GetComponent<WeaponObject>().UpdateWeapon(armaEquipada);
-               inside = true;
             }
 
             setNewArma(armaNueva);
-
+            StartCoroutine(coolDownPickup());
         }
         /*if (collision.gameObject.tag == "armaPickup")
         {
@@ -48,12 +47,22 @@ public class InventoryManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        inside = false;
+        if (collision.gameObject.tag == "armaPickup")
+        {
+            inside = false;
+            StopAllCoroutines();
+        }
     }
 
     private void setNewArma(WeaponBase weapon)
     {
         armaEquipada = weapon;
         invArmas.UpdateWeaponEquipped(armaEquipada);
+    }
+
+    private IEnumerator coolDownPickup()
+    {
+        yield return new WaitForSeconds(1f);
+        inside = false;
     }
 }
