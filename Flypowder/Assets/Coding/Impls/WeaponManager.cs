@@ -6,7 +6,6 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public WeaponBase armaEquipada;
-    public GameObject bala;
     private SFXManager sfx;
     private SpriteRenderer weaponSprite;
 
@@ -22,12 +21,11 @@ public class WeaponManager : MonoBehaviour
     private bool recargando;
     private static bool onRecargaCooldown;
     private bool onShotCooldown;
+    private BulletPoolManager bulletPoolManager;
 
     void Start()
     {
         InitAllVars();
-        sfx = GameObject.Find("SFXManager").GetComponent<SFXManager>();
-        playerRigidBody = GetComponentInParent<Rigidbody2D>();
     }
     void Update()
     {
@@ -54,7 +52,9 @@ public class WeaponManager : MonoBehaviour
         {
             if (!onShotCooldown)
             {
-                BulletSetup();
+                GetComponentInParent<PlayerManager>().ShallBeFlippedOnShot(normalizedCoords);
+                bulletPoolManager.CheckBulletPool(normalizedCoords);
+                sfx.playShootingDefault();
                 playerRigidBody.AddForce(normalizedCoords * armaEquipada.retroceso * Time.fixedDeltaTime * 50, ForceMode2D.Impulse);
 
                 municionActual--;
@@ -85,18 +85,6 @@ public class WeaponManager : MonoBehaviour
         if (normalizedCoords.x > 0) { weaponSprite.flipY = false; } else { weaponSprite.flipY = true; }
     }
 
-    private void BulletSetup()
-    {
-        GetComponentInParent<PlayerManager>().ShallBeFlippedOnShot(normalizedCoords);
-        GameObject bullet = Instantiate(bala);
-        Destroy(bullet, 2f);
-        bullet.transform.position = this.transform.position;
-        float angle = Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg;
-        bullet.transform.eulerAngles = new Vector3(0,0, -angle);
-        bullet.GetComponent<Rigidbody2D>().velocity = (-normalizedCoords * 50);
-        sfx.playShootingDefault();
-    }
-
     public void UpdateWeaponEquipped(WeaponBase weapon)
     {
         armaEquipada = weapon;
@@ -121,6 +109,9 @@ public class WeaponManager : MonoBehaviour
         {
             hasArmaEquipada = false;
         }
+        sfx = GameObject.Find("SFXManager").GetComponent<SFXManager>();
+        playerRigidBody = GetComponentInParent<Rigidbody2D>();
+        bulletPoolManager = GameObject.Find("GameManager").GetComponentInChildren<BulletPoolManager>();
     }
 
         private void setArmaEquipada(WeaponBase armaEquipada)

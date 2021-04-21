@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class BulletLogic : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        StartCoroutine(DisableAfterSeconds());
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag != "Player")
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
+    }
+
+    private IEnumerator DisableAfterSeconds()
+    {
+        yield return new WaitForSeconds(2);
+        this.gameObject.SetActive(false);
     }
 }
