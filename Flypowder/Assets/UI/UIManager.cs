@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,6 +13,8 @@ public class UIManager : MonoBehaviour
     public bool hit = false;
     private int hp = 3;
     private int municionRestante;
+    public TextMeshProUGUI timer;
+    private float startTime;
 
     [SerializeField]
     private GameObject menuPausa;
@@ -25,6 +26,7 @@ public class UIManager : MonoBehaviour
         municionRestante = WeaponManager.getMunicionActual();
         actualAmmo.text = "" + municionRestante;
         recargandoText.enabled = false;
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -33,6 +35,11 @@ public class UIManager : MonoBehaviour
         municionRestante = WeaponManager.getMunicionActual();
         actualAmmo.text = "" + municionRestante;
         puntosVida.text = "" + hp;
+
+        float T = Time.time - startTime;
+        string mins = ((int) T / 60).ToString();
+        string secs = (T % 60).ToString("f0");
+        timer.SetText(mins + " : " + secs);
 
         if (WeaponManager.isRecharging()) 
         {
