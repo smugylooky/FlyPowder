@@ -5010,5 +5010,11 @@ PrefabInstance:
       propertyPath: BypassListenerEffects
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4611396717961560527, guid: 6a53cbf58e6f140449b9a8cd7ff88e0c,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 76c56261099f42d45b1efdc8c14dd9e2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a53cbf58e6f140449b9a8cd7ff88e0c, type: 3}
