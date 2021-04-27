@@ -38,8 +38,8 @@ public class UIManager : MonoBehaviour
 
         float T = Time.time - startTime;
         string mins = ((int) T / 60).ToString();
-        string secs = (T % 60).ToString("f0");
-        timer.SetText(mins + " : " + secs);
+        string secs = (T % 60).ToString("f2");
+        timer.SetText(mins + ":" + secs);
 
         if (WeaponManager.isRecharging()) 
         {
