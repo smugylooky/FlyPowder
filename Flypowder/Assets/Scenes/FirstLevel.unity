@@ -4855,6 +4855,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BungV2
       objectReference: {fileID: 0}
+    - target: {fileID: 1341010367407813002, guid: a13c8484afb83f141b3cc60b5884039d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7303034088690763146, guid: 89abc03c2a66d2647bffbb4ec756c429,
+        type: 3}
     - target: {fileID: 1341010367407813003, guid: a13c8484afb83f141b3cc60b5884039d,
         type: 3}
       propertyPath: m_LocalPosition.x

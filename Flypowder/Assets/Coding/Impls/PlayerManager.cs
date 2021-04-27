@@ -42,17 +42,18 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(onair);
         velocidadActual = lastRBSpeed;
         if (!onair)
         {
-            if (velocidadActual.Equals(0)) 
-            {
-                playerAnimator.SetBool("Is Running", false);
-            }
 
             if ((PlayerControls.isMovingLeft() || PlayerControls.isMovingRight()) && !crouching)
             {
                 UpdateSpeedFromInputs();
+            }
+            else 
+            {
+                playerAnimator.SetBool("Is Running", false);
             }
 
 
@@ -66,12 +67,13 @@ public class PlayerManager : MonoBehaviour
 
             if (PlayerControls.isCrouching())
             {
-                //aquí iria algo de las animaciones
+                playerAnimator.SetTrigger("Crouching");
+                playerAnimator.SetBool("Is Crouching", true);
                 crouching = true;
             }
             else
             {
-                //aquí imagino que same
+                playerAnimator.SetBool("Is Crouching", false);
                 crouching = false;
             }
         }
