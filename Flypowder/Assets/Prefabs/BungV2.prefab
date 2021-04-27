@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 3262521605288364508, guid: 89abc03c2a66d2647bffbb4ec756c429,
+  m_Sprite: {fileID: -7303034088690763146, guid: 89abc03c2a66d2647bffbb4ec756c429,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -266,7 +266,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.75, y: 1.8125}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.28, y: 0.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -382,4 +382,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armaEquipada: {fileID: 0}
-  bala: {fileID: 5411581916928480881, guid: 3be0e6e1fcbc92b459b027b9d8528b6a, type: 3}
