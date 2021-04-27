@@ -8,6 +8,7 @@ TagManager:
   - plataforma
   - Stage hazard
   - armaPickup
+  - pushable
   layers:
   - Default
   - TransparentFX
