@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: d2a9e9017eb94aa44802b697c4e69e40
-    name: MyExposedParam
+    name: MasterVolume
   m_AudioMixerGroupViews:
   - guids:
     - cb3934178bbbb314e9db2c363fd73746
@@ -40,8 +40,8 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24400004}
   m_UserColorIndex: 0
-  m_Mute: 1
-  m_Solo: 1
+  m_Mute: 0
+  m_Solo: 0
   m_BypassEffects: 0
 --- !u!244 &24400004
 AudioMixerEffectController:
@@ -67,5 +67,5 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 8bd5f27eb812db44bb2b1e22149c1f1a
   m_FloatValues:
-    d2a9e9017eb94aa44802b697c4e69e40: -0
+    d2a9e9017eb94aa44802b697c4e69e40: 0
   m_TransitionOverrides: {}
