@@ -17,6 +17,9 @@ public class UIManager : MonoBehaviour
     private float startTime;
 
     [SerializeField]
+    private FlyPowderSceneManager sceneManager;
+
+    [SerializeField]
     private GameObject menuPausa;
 
     // Start is called before the first frame update

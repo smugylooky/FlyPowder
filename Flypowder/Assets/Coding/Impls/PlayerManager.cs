@@ -18,7 +18,10 @@ public class PlayerManager : MonoBehaviour
 
     public float saltoAlturaY;
     public float saltoLargoY;
-
+    
+    [SerializeField]
+    private FlyPowderSceneManager sceneManager;
+    
     private float velocidadActual;
     bool jumping;
     bool onair;
@@ -152,6 +155,10 @@ public class PlayerManager : MonoBehaviour
         {
                   
             this.transform.position = new Vector2(-65.51f, 6.87f);
+        }
+        if (collision.gameObject.tag == "NextLevel") 
+        {
+            sceneManager.LoadSecondLevel();
         }
     }
 

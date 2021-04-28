@@ -1,0 +1,917 @@
+fileFormatVersion: 2
+guid: 8620adbb7f7769747a7746883aaac4ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4276905120546793103
+    second: Genesis 32X SCD - Golden Axe II - Orc_0
+  - first:
+      213: -4797046297168895060
+    second: Genesis 32X SCD - Golden Axe II - Orc_1
+  - first:
+      213: -516405517635796629
+    second: Genesis 32X SCD - Golden Axe II - Orc_2
+  - first:
+      213: -8262409799459887771
+    second: Genesis 32X SCD - Golden Axe II - Orc_3
+  - first:
+      213: -7269734177824070202
+    second: Genesis 32X SCD - Golden Axe II - Orc_4
+  - first:
+      213: 271126640239317861
+    second: Genesis 32X SCD - Golden Axe II - Orc_5
+  - first:
+      213: -3840611458412023826
+    second: Genesis 32X SCD - Golden Axe II - Orc_6
+  - first:
+      213: 7425673611241829747
+    second: Genesis 32X SCD - Golden Axe II - Orc_7
+  - first:
+      213: -3931629934391426859
+    second: Genesis 32X SCD - Golden Axe II - Orc_8
+  - first:
+      213: -7767698439330998814
+    second: Genesis 32X SCD - Golden Axe II - Orc_9
+  - first:
+      213: 3065855644265016762
+    second: Genesis 32X SCD - Golden Axe II - Orc_10
+  - first:
+      213: 6450946488612812833
+    second: Genesis 32X SCD - Golden Axe II - Orc_11
+  - first:
+      213: 4577455753871976403
+    second: Genesis 32X SCD - Golden Axe II - Orc_12
+  - first:
+      213: 6775989537273525606
+    second: Genesis 32X SCD - Golden Axe II - Orc_13
+  - first:
+      213: 2422051483172629654
+    second: Genesis 32X SCD - Golden Axe II - Orc_14
+  - first:
+      213: 8860361153962138336
+    second: Genesis 32X SCD - Golden Axe II - Orc_15
+  - first:
+      213: -8211283537920364128
+    second: Genesis 32X SCD - Golden Axe II - Orc_16
+  - first:
+      213: 7915359358282025999
+    second: Genesis 32X SCD - Golden Axe II - Orc_17
+  - first:
+      213: -1723161382589349219
+    second: Genesis 32X SCD - Golden Axe II - Orc_18
+  - first:
+      213: -3946277671879717569
+    second: Genesis 32X SCD - Golden Axe II - Orc_19
+  - first:
+      213: 1068712201950733937
+    second: Genesis 32X SCD - Golden Axe II - Orc_20
+  - first:
+      213: 2472514109888152723
+    second: Genesis 32X SCD - Golden Axe II - Orc_21
+  - first:
+      213: 924613002166569977
+    second: Genesis 32X SCD - Golden Axe II - Orc_22
+  - first:
+      213: -7741032544780116014
+    second: Genesis 32X SCD - Golden Axe II - Orc_23
+  - first:
+      213: -5690489268077771254
+    second: Genesis 32X SCD - Golden Axe II - Orc_24
+  - first:
+      213: 1108759073076588054
+    second: Genesis 32X SCD - Golden Axe II - Orc_25
+  - first:
+      213: -6057687665671332801
+    second: Genesis 32X SCD - Golden Axe II - Orc_26
+  - first:
+      213: -647376768560898473
+    second: Genesis 32X SCD - Golden Axe II - Orc_27
+  - first:
+      213: -7251061937616640170
+    second: Genesis 32X SCD - Golden Axe II - Orc_28
+  - first:
+      213: 8630927890350175700
+    second: Genesis 32X SCD - Golden Axe II - Orc_29
+  - first:
+      213: 2837908676972173390
+    second: Genesis 32X SCD - Golden Axe II - Orc_30
+  - first:
+      213: -2443363541359416913
+    second: Genesis 32X SCD - Golden Axe II - Orc_31
+  - first:
+      213: 5278808824302526795
+    second: Genesis 32X SCD - Golden Axe II - Orc_32
+  - first:
+      213: 2129481696851707319
+    second: Genesis 32X SCD - Golden Axe II - Orc_33
+  - first:
+      213: 5554116366564472340
+    second: Genesis 32X SCD - Golden Axe II - Orc_34
+  - first:
+      213: -3156018740345984603
+    second: Genesis 32X SCD - Golden Axe II - Orc_35
+  - first:
+      213: 3867297673502205203
+    second: Genesis 32X SCD - Golden Axe II - Orc_36
+  - first:
+      213: 1220380338341615130
+    second: Genesis 32X SCD - Golden Axe II - Orc_37
+  - first:
+      213: 7148707433375480437
+    second: Genesis 32X SCD - Golden Axe II - Orc_38
+  - first:
+      213: 3116417001273836718
+    second: Genesis 32X SCD - Golden Axe II - Orc_39
+  - first:
+      213: 7985008294855864619
+    second: Genesis 32X SCD - Golden Axe II - Orc_40
+  - first:
+      213: 8230861287553506099
+    second: Genesis 32X SCD - Golden Axe II - Orc_41
+  - first:
+      213: -7672635505537518906
+    second: Genesis 32X SCD - Golden Axe II - Orc_42
+  - first:
+      213: -6044054036894173214
+    second: Genesis 32X SCD - Golden Axe II - Orc_43
+  - first:
+      213: -8211707418819365686
+    second: Genesis 32X SCD - Golden Axe II - Orc_44
+  - first:
+      213: -3726591390973470346
+    second: Genesis 32X SCD - Golden Axe II - Orc_45
+  - first:
+      213: 6974335554854390489
+    second: Genesis 32X SCD - Golden Axe II - Orc_46
+  - first:
+      213: -6332484353558059248
+    second: Genesis 32X SCD - Golden Axe II - Orc_47
+  - first:
+      213: -5982339745182109909
+    second: Genesis 32X SCD - Golden Axe II - Orc_48
+  - first:
+      213: -851869735130749712
+    second: Genesis 32X SCD - Golden Axe II - Orc_49
+  - first:
+      213: 627428369723219059
+    second: Genesis 32X SCD - Golden Axe II - Orc_50
+  - first:
+      213: 8244145150078098859
+    second: Genesis 32X SCD - Golden Axe II - Orc_51
+  - first:
+      213: 1787283861136003667
+    second: Genesis 32X SCD - Golden Axe II - Orc_52
+  - first:
+      213: -3506502325325191634
+    second: Genesis 32X SCD - Golden Axe II - Orc_53
+  - first:
+      213: -82557140635479863
+    second: Genesis 32X SCD - Golden Axe II - Orc_54
+  - first:
+      213: -6094374762611262708
+    second: Genesis 32X SCD - Golden Axe II - Orc_55
+  - first:
+      213: 4921543137514366456
+    second: Genesis 32X SCD - Golden Axe II - Orc_56
+  - first:
+      213: -4977995474157946551
+    second: Genesis 32X SCD - Golden Axe II - Orc_57
+  - first:
+      213: -4954067529993614788
+    second: Genesis 32X SCD - Golden Axe II - Orc_58
+  - first:
+      213: 4938672824861579146
+    second: Genesis 32X SCD - Golden Axe II - Orc_59
+  - first:
+      213: 1038211271359106623
+    second: Genesis 32X SCD - Golden Axe II - Orc_60
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 243
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86ad301c8e9a5b30800000000000000
+      internalID: 4276905120546793103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 237
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3252efec77d6db0800000000000000
+      internalID: -4797046297168895060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 240
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b614441faeb55d8f0800000000000000
+      internalID: -516405517635796629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 237
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565ac724016065d80800000000000000
+      internalID: -8262409799459887771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 236
+        width: 30
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5a74f2847bc1b90800000000000000
+      internalID: -7269734177824070202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 232
+        width: 29
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5631c982e3c33c300800000000000000
+      internalID: 271126640239317861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_6
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 234
+        width: 31
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef6e0d1a3863bac0800000000000000
+      internalID: -3840611458412023826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 233
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375bf087eca4d0760800000000000000
+      internalID: 7425673611241829747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 156
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d08e44c76b0079c0800000000000000
+      internalID: -3931629934391426859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 160
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5d159ac67933490800000000000000
+      internalID: -7767698439330998814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdea01077b1c8a20800000000000000
+      internalID: 3065855644265016762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 166
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128f1de17ad568950800000000000000
+      internalID: 6450946488612812833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_12
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 169
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d76b9871c3668f30800000000000000
+      internalID: 4577455753871976403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_13
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 170
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665b3fa5596290e50800000000000000
+      internalID: 6775989537273525606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 170
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c663acdfadc9120800000000000000
+      internalID: 2422051483172629654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 76
+        width: 40
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea559b768356fa70800000000000000
+      internalID: 8860361153962138336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 78
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a17e34a029ab0e80800000000000000
+      internalID: -8211283537920364128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 77
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cc6f3266109dd60800000000000000
+      internalID: 7915359358282025999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_18
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 79
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92471c2ad91618e0800000000000000
+      internalID: -1723161382589349219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 81
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dcd8e9d510c39c0800000000000000
+      internalID: -3946277671879717569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 108
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176266cd514d4de00800000000000000
+      internalID: 1068712201950733937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_21
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 80
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944606ab72205220800000000000000
+      internalID: 2472514109888152723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_22
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 80
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb88dc60a2e4dc00800000000000000
+      internalID: 924613002166569977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_23
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 78
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df94ad0ae3529490800000000000000
+      internalID: -7741032544780116014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a064d0209225701b0800000000000000
+      internalID: -5690489268077771254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_25
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 8
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ea834a08a136f00800000000000000
+      internalID: 1108759073076588054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_26
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 5
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c156fb925ceeba0800000000000000
+      internalID: -6057687665671332801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 11
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e561a424e0407f0800000000000000
+      internalID: -647376768560898473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_28
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6572104e59d0f5b90800000000000000
+      internalID: -7251061937616640170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Golden Axe II - Orc_49
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 7
+        width: 67
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f420a24dfc8d24f0800000000000000
+      internalID: -851869735130749712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
