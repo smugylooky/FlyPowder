@@ -14,11 +14,6 @@ public class InventoryManager : MonoBehaviour
         inside = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "armaPickup")
@@ -39,10 +34,6 @@ public class InventoryManager : MonoBehaviour
             setNewArma(armaNueva);
             StartCoroutine(coolDownPickup());
         }
-        /*if (collision.gameObject.tag == "armaPickup")
-        {
-            //GetComponentInChildren<WeaponManager>().UpdateWeaponEquipped();
-        }*/
     }
 
     private void OnTriggerExit2D(Collider2D collision)
