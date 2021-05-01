@@ -52,9 +52,12 @@ public class PlayerManager : MonoBehaviour
     {
         velocidadActual = lastRBSpeed;
 
-        if (PlayerControls.isJumping())
+        if (PlayerControls.isJumping() && !timeOutAir)
         {
             jumping = true;
+            onair = true;
+            timeOutAir = true;
+            timingJumpPenalty = false;
         }
 
         if (!onair)
@@ -93,8 +96,6 @@ public class PlayerManager : MonoBehaviour
 
         if (jumping)
         {
-            if (timeOutAir) { return; }
-
             playerAnimator.SetTrigger("Jumping");
             playerAnimator.SetBool("On Air", true);
             sfxManager.PlayJump();
@@ -120,9 +121,14 @@ public class PlayerManager : MonoBehaviour
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x * 0.65f, playerRigidBody.velocity.y);
 
             StopAllCoroutines();
-            timeOutAir = true;
-            timingJumpPenalty = false;
             jumping = false;
+            Debug.Log(timeOutAir);
+        }
+
+        if (onair && !timingJumpPenalty && !timeOutAir)
+        {
+            timingJumpPenalty = true;
+            StartCoroutine(JumpPenaltyApplication());
         }
 
         CheckSpeed();
@@ -148,13 +154,18 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "terreno")
         {
             StopAllCoroutines();
             onair = false;
             timeOutAir = false;
             timingJumpPenalty = false;
-            playerAnimator.SetBool("On Air",false);
+            playerAnimator.SetBool("On Air", false);
         }
         if (collision.gameObject.tag == "plataforma")
         {
@@ -195,7 +206,6 @@ public class PlayerManager : MonoBehaviour
         {
             onair = true;
             crouching = false;
-            if (!timeOutAir && !timingJumpPenalty) { StartCoroutine(JumpPenaltyApplication()); timingJumpPenalty = true; }
         }
     }
 
