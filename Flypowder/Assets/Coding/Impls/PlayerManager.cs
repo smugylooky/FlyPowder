@@ -156,7 +156,6 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "terreno")
         {
-            playerAnimator.SetBool("On Air", false);
             onair = false;
         }
         if (collision.gameObject.tag == "plataforma")
@@ -165,7 +164,6 @@ public class PlayerManager : MonoBehaviour
             {
                 if (hitPos.normal.y > 0 && onair)
                 {
-                    playerAnimator.SetBool("On Air", false);
                     onair = false;
                 }
             }
