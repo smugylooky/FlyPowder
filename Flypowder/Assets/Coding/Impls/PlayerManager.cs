@@ -154,7 +154,22 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "terreno")
+        {
+            playerAnimator.SetBool("On Air", false);
+            onair = false;
+        }
+        if (collision.gameObject.tag == "plataforma")
+        {
+            foreach (ContactPoint2D hitPos in collision.contacts)
+            {
+                if (hitPos.normal.y > 0 && onair)
+                {
+                    playerAnimator.SetBool("On Air", false);
+                    onair = false;
+                }
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -251,7 +266,7 @@ public class PlayerManager : MonoBehaviour
     private IEnumerator JumpPenaltyApplication()
     {
         Debug.Log("Empezando corutina");
-        yield return new WaitForSeconds(airPenaltyTimer);
+        yield return new WaitForSeconds(airPenaltyTimer/10);
         timeOutAir = true;
         timingJumpPenalty = false;
     }

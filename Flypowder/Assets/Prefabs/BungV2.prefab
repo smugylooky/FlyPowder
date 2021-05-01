@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friccionDefault: 1.75
   deslizOnCrouch: 0.1
-  airPenaltyTimer: 5
+  airPenaltyTimer: 1
   velocidad: 90
   velocidadMaximaG: 16
   velocidadMaximaA: 40
