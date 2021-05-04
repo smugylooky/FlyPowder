@@ -7,12 +7,14 @@ public class SFXManager : MonoBehaviour
 {
     private AudioClip weaponSFX,deathSFX,winSFX,jumpSFX,walkingSFX, shootingSFX, reloadSFX;
     private static AudioSource audioSrc;
+    private WeaponBase playerWeapon;
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        playerWeapon = GameObject.Find("BungV2").GetComponentInChildren<WeaponBase>();
         deathSFX = Resources.Load<AudioClip>("death");
         winSFX = Resources.Load<AudioClip>("win");
-        jumpSFX = Resources.Load<AudioClip>("jump");
+        jumpSFX = Resources.Load<AudioClip>(SoundVars.SALTO);
         walkingSFX = Resources.Load<AudioClip>("walking");
         shootingSFX = Resources.Load<AudioClip>("shootingDefault");
         reloadSFX = Resources.Load<AudioClip>("reloadDefault");
@@ -23,7 +25,7 @@ public class SFXManager : MonoBehaviour
     {
         try
         {
-            weaponSFX = Resources.Load<AudioClip>(weapon);
+            weaponSFX = Resources.Load<AudioClip>(weapon + SoundVars.DISPARO);
             audioSrc.PlayOneShot(weaponSFX);
         }
         catch (Exception e) { Debug.Log("No se ha podido encontrar el sonido para el arma " + weapon); }
