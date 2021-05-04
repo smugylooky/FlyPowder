@@ -11,7 +11,7 @@ public class SFXManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerWeapon = GameObject.Find("BungV2").GetComponentInChildren<WeaponBase>();
+        playerWeapon = GameObject.Find("BungV2").GetComponentInChildren<WeaponManager>().armaEquipada;
         deathSFX = Resources.Load<AudioClip>("death");
         winSFX = Resources.Load<AudioClip>("win");
         jumpSFX = Resources.Load<AudioClip>(SoundVars.SALTO);
