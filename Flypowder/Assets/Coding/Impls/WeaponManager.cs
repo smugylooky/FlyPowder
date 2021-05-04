@@ -22,6 +22,7 @@ public class WeaponManager : MonoBehaviour
     private static bool onRecargaCooldown;
     private bool onShotCooldown;
     private BulletPoolManager bulletPoolManager;
+    private LineRenderer line;
 
     void Start()
     {
@@ -76,6 +77,7 @@ public class WeaponManager : MonoBehaviour
 
     private void UpdateWeaponToMouseCoords()
     {
+        int distancia = 50;
         playercoords = transform.position;
         coordsRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         normalizedCoords = (playercoords - coordsRaton);
@@ -83,6 +85,18 @@ public class WeaponManager : MonoBehaviour
 
         transform.eulerAngles = new Vector3(0, 0, -(Mathf.Atan2(normalizedCoords.x, normalizedCoords.y) * Mathf.Rad2Deg) + 90f);
         if (normalizedCoords.x > 0) { weaponSprite.flipY = false; } else { weaponSprite.flipY = true; }
+
+        if (hasArmaEquipada)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -normalizedCoords, distancia);
+            line.SetPosition(0, transform.position);
+            //Debug.DrawLine(transform.position, transform.position + new Vector3(-normalizedCoords.x * distancia, -normalizedCoords.y *distancia, 0));
+            line.SetPosition(1, transform.position + new Vector3(-normalizedCoords.x * distancia, -normalizedCoords.y * distancia, 0));
+            if (hit.collider != null)
+            {
+                line.SetPosition(1, hit.point);
+            }
+        }
     }
 
     public void UpdateWeaponEquipped(WeaponBase weapon)
@@ -99,11 +113,13 @@ public class WeaponManager : MonoBehaviour
         onShotCooldown = false;
         onRecargaCooldown = false;
         weaponSprite = GetComponent<SpriteRenderer>();
+        line = GetComponent<LineRenderer>();
+        line.positionCount = 2;
         if (armaEquipada != null)
         {
             hasArmaEquipada = true;
             municionActual = armaEquipada.balasCargadorMax;
-            weaponSprite.sprite = armaEquipada.spriteArma;
+            weaponSprite.sprite = armaEquipada.objectSprite;
         }
         else
         {
