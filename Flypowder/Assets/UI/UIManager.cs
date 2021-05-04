@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
     private int municionRestante;
     public TextMeshProUGUI timer;
     private float startTime;
+    private string mins;
+    private string secs;
 
     [SerializeField]
     private FlyPowderSceneManager sceneManager;
@@ -40,9 +42,25 @@ public class UIManager : MonoBehaviour
         puntosVida.text = "" + hp;
 
         float T = Time.time - startTime;
-        string mins = ((int) T / 60).ToString();
-        string secs = (T % 60).ToString("f2");
-        timer.SetText(mins + ":" + secs);
+        int tiempoMins = (int)T / 60;
+        if (tiempoMins < 10)
+        {
+            if (tiempoMins > 0)
+            {
+                mins = "0" + tiempoMins.ToString() + ":";
+            }
+            else
+            {
+                mins = "";
+            }
+        }
+        else
+        {
+            mins = tiempoMins.ToString() + ":";
+        }
+        float tiempoSegs = T % 60;
+        secs = tiempoSegs < 10 ? "0" + tiempoSegs.ToString("f2") : tiempoSegs.ToString("f2");
+        timer.SetText(mins + secs);
 
         if (WeaponManager.isRecharging()) 
         {

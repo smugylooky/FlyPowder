@@ -27,10 +27,4 @@ public class VolumenManager : MonoBehaviour
     {
         _mixer.SetFloat(_volumeParameter, Mathf.Log10(value) * _multiplier);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

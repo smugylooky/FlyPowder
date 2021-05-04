@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
 
     public float friccionDefault;
     public float deslizOnCrouch;
+    public float airPenaltyTimer;
     public float velocidad;
     public float velocidadMaximaG;
     public float velocidadMaximaA;
@@ -21,11 +22,13 @@ public class PlayerManager : MonoBehaviour
     
     [SerializeField]
     private FlyPowderSceneManager sceneManager;
-    
+
     private float velocidadActual;
-    bool jumping;
-    bool onair;
-    bool crouching;
+    private bool jumping;
+    private bool onair;
+    private bool crouching;
+    private bool timeOutAir;
+    private bool timingJumpPenalty;
     private SFXManager sfxManager;
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,8 @@ public class PlayerManager : MonoBehaviour
         jumping = false;
         onair = false;
         crouching = false;
+        timeOutAir = false;
+        timingJumpPenalty = false;
 
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
@@ -45,10 +50,21 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(onair);
         velocidadActual = lastRBSpeed;
+
+        if (PlayerControls.isJumping() && !timeOutAir)
+        {
+            jumping = true;
+            onair = true;
+            timeOutAir = true;
+            timingJumpPenalty = false;
+        }
+
         if (!onair)
         {
+            StopAllCoroutines();
+            timeOutAir = false;
+            timingJumpPenalty = false;
 
             if ((PlayerControls.isMovingLeft() || PlayerControls.isMovingRight()) && !crouching)
             {
@@ -59,24 +75,17 @@ public class PlayerManager : MonoBehaviour
                 playerAnimator.SetBool("Is Running", false);
             }
 
-
-            if (PlayerControls.isJumping())
-            {
-                playerAnimator.SetTrigger("Jumping");
-                playerAnimator.SetBool("On Air", true);
-                jumping = true;
-                onair = true;
-            }
-
             if (PlayerControls.isCrouching())
             {
                 playerAnimator.SetTrigger("Crouching");
                 playerAnimator.SetBool("Is Crouching", true);
+
                 crouching = true;
             }
             else
             {
                 playerAnimator.SetBool("Is Crouching", false);
+
                 crouching = false;
             }
         }
@@ -84,11 +93,16 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         if (jumping)
         {
+            playerAnimator.SetTrigger("Jumping");
+            playerAnimator.SetBool("On Air", true);
             sfxManager.PlayJump();
+
             float specialJumpY = 1f;
-            onair = true;
+
+            //onair = true;
 
             if (crouching)
             {
@@ -105,7 +119,16 @@ public class PlayerManager : MonoBehaviour
 
             playerRigidBody.AddForce(Vector2.up * alturaSalto * Time.fixedDeltaTime * 50 * specialJumpY, ForceMode2D.Impulse);
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x * 0.65f, playerRigidBody.velocity.y);
+
+            StopAllCoroutines();
             jumping = false;
+            Debug.Log(timeOutAir);
+        }
+
+        if (onair && !timingJumpPenalty && !timeOutAir)
+        {
+            timingJumpPenalty = true;
+            StartCoroutine(JumpPenaltyApplication());
         }
 
         CheckSpeed();
@@ -134,7 +157,6 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "terreno")
         {
             onair = false;
-            playerAnimator.SetBool("On Air",false);
         }
         if (collision.gameObject.tag == "plataforma")
         {
@@ -143,6 +165,31 @@ public class PlayerManager : MonoBehaviour
                 if (hitPos.normal.y > 0 && onair)
                 {
                     onair = false;
+                }
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "terreno")
+        {
+            StopAllCoroutines();
+            onair = false;
+            timeOutAir = false;
+            timingJumpPenalty = false;
+            playerAnimator.SetBool("On Air", false);
+        }
+        if (collision.gameObject.tag == "plataforma")
+        {
+            foreach (ContactPoint2D hitPos in collision.contacts)
+            {
+                if (hitPos.normal.y > 0 && onair)
+                {
+                    StopAllCoroutines();
+                    onair = false;
+                    timeOutAir = false;
+                    timingJumpPenalty = false;
                     playerAnimator.SetBool("On Air", false);
                 }
             }
@@ -159,6 +206,10 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "NextLevel") 
         {
             sceneManager.LoadSecondLevel();
+        }
+        if (collision.gameObject.tag == "terreno" || collision.gameObject.tag == "plataforma")
+        {
+            StopAllCoroutines();
         }
     }
 
@@ -208,6 +259,14 @@ public class PlayerManager : MonoBehaviour
                 velocidadActual = -velocidad;
             }
         }
+    }
+
+    private IEnumerator JumpPenaltyApplication()
+    {
+        Debug.Log("Empezando corutina");
+        yield return new WaitForSeconds(airPenaltyTimer/10);
+        timeOutAir = true;
+        timingJumpPenalty = false;
     }
 
 }

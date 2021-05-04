@@ -206,12 +206,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friccionDefault: 1.75
   deslizOnCrouch: 0.1
+  airPenaltyTimer: 1
   velocidad: 90
   velocidadMaximaG: 16
   velocidadMaximaA: 40
   alturaSalto: 17.5
   saltoAlturaY: 1.3
   saltoLargoY: 0.9
+  sceneManager: {fileID: 0}
 --- !u!50 &1341010367407813015
 Rigidbody2D:
   serializedVersion: 4
