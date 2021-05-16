@@ -403,6 +403,7 @@ MonoBehaviour:
   recargandoText: {fileID: 1978610569841528445}
   hit: 0
   timer: {fileID: 4807367340189038191}
+  sceneManager: {fileID: 0}
   menuPausa: {fileID: 2310349277893538791}
 --- !u!1 &2310349277079223135
 GameObject:
