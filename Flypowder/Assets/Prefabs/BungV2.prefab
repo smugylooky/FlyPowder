@@ -383,4 +383,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a84abc459e7a94bab6242f7a7ae844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armaEquipada: {fileID: 0}
+  armaEquipada: {fileID: 11400000, guid: 01bafedafca6d9a4cad164414053a329, type: 2}
