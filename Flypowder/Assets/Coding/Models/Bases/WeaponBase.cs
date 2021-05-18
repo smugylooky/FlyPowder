@@ -8,7 +8,7 @@ public enum formaDisparo { AUTOMATICO,
 
 
 
-public class WeaponBase : ScriptableObject
+public class WeaponBase : EquippableBase
 {
     /*
         DATOS DE UN ARMA:
@@ -23,15 +23,11 @@ public class WeaponBase : ScriptableObject
         sprite asociado
         sonidos al disparar
     */
-    public string nombre;
-    public string descripcion;
     public int balasCargadorMax;
     public int tipoDisparo;
     public float tiempoRecarga;
     public float tiempoEntreDisparos;
     public float retroceso;
-    public Sprite spriteArma;
-    public string sfx;
 
    
 }

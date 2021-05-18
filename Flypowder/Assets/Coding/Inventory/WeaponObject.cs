@@ -6,7 +6,6 @@ public class WeaponObject : MonoBehaviour
 {
     public WeaponBase armaObjeto;
     private SpriteRenderer renderSprites;
-    private int municionActual;
     void Start()
     {
         if (armaObjeto == null)
@@ -15,7 +14,7 @@ public class WeaponObject : MonoBehaviour
         }
 
         renderSprites = GetComponentInChildren<SpriteRenderer>();
-        renderSprites.sprite = armaObjeto.spriteArma;
+        renderSprites.sprite = armaObjeto.objectSprite;
     }
 
     public WeaponBase getWeapon()
@@ -26,7 +25,7 @@ public class WeaponObject : MonoBehaviour
     public void UpdateWeapon(WeaponBase weapon)
     {
         armaObjeto = weapon;
-        renderSprites.sprite = armaObjeto.spriteArma;
+        renderSprites.sprite = armaObjeto.objectSprite;
     }
 
 }
