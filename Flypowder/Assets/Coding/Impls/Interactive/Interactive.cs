@@ -14,6 +14,7 @@ public class Interactive : MonoBehaviour
     void Start() 
     {
         animator = GetComponent<Animator>();
+        sfxManager = SFXManager.Instance;
     }
 
     public virtual void TurnOn() 

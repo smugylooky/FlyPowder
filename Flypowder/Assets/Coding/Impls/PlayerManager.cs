@@ -205,7 +205,10 @@ public class PlayerManager : MonoBehaviour
         }
         if (collision.gameObject.tag == "NextLevel") 
         {
-            sceneManager.LoadSecondLevel();
+            sfxManager.playSonidoCambioMapa();
+            if (Application.loadedLevel == 3)
+            { sceneManager.LoadSecondLevel(); }
+            else if (Application.loadedLevel == 4) { sceneManager.LoadThirdLevel(); }
         }
         if (collision.gameObject.tag == "terreno" || collision.gameObject.tag == "plataforma")
         {

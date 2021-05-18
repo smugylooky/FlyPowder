@@ -26,6 +26,7 @@ public class WeaponManager : MonoBehaviour
     void Start()
     {
         InitAllVars();
+        
     }
     void Update()
     {

@@ -39,6 +39,11 @@ public class FlyPowderSceneManager : MonoBehaviour
         LoadScene("SecondLevel");
     }
 
+    public void LoadThirdLevel() 
+    {
+        LoadScene("ThirdLevel");    
+    }
+
     public void ExitGame()
     {
         Application.Quit();
