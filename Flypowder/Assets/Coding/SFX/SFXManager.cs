@@ -5,19 +5,42 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
-    private AudioClip weaponSFX,deathSFX,winSFX,jumpSFX,walkingSFX, shootingSFX, reloadSFX;
+    private AudioClip weaponSFX,deathSFX,winSFX,jumpSFX,walkingSFX, shootingSFX, reloadSFX, sonidoCorredizaSFX, sonidoPalancaSFX, sonidoBotonSFX, sonidoCambioMapaSFX;
     private static AudioSource audioSrc;
     private WeaponBase playerWeapon;
+    private static SFXManager instance = null;
+    public static SFXManager Instance { get { return instance; } }
+
+    private void Awake()
+    {
+        EnsureSingleton();
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void EnsureSingleton()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
+    }
     // Start is called before the first frame update
     void Start()
     {
-        playerWeapon = GameObject.Find("BungV2").GetComponentInChildren<WeaponManager>().armaEquipada;
+        try { playerWeapon = GameObject.Find("BungV2").GetComponentInChildren<WeaponManager>().armaEquipada; }
+        catch (Exception e){}
+        
         deathSFX = Resources.Load<AudioClip>("death");
         winSFX = Resources.Load<AudioClip>("win");
         jumpSFX = Resources.Load<AudioClip>(SoundVars.SALTO);
         walkingSFX = Resources.Load<AudioClip>("walking");
         shootingSFX = Resources.Load<AudioClip>("shootingDefault");
         reloadSFX = Resources.Load<AudioClip>("reloadDefault");
+        sonidoCorredizaSFX = Resources.Load<AudioClip>("sonidoCorrediza");
+        sonidoPalancaSFX = Resources.Load<AudioClip>("sonidoPalanca");
+        sonidoBotonSFX = Resources.Load<AudioClip>("sonidoBoton");
+        sonidoCambioMapaSFX = Resources.Load<AudioClip>("sonidoCambioMapa");
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -58,5 +81,25 @@ public class SFXManager : MonoBehaviour
     public void playReloadingingDefault()
     {
         audioSrc.PlayOneShot(reloadSFX);
+    }
+
+    public void playSonidoCambioMapa()
+    {
+        audioSrc.PlayOneShot(sonidoCambioMapaSFX);
+    }
+
+    public void playSonidoCorrediza()
+    {
+        audioSrc.PlayOneShot(sonidoCorredizaSFX);
+    }
+
+    public void playSonidoPalanca()
+    {
+        audioSrc.PlayOneShot(sonidoPalancaSFX);
+    }
+
+    public void playSonidoBoton()
+    {
+        audioSrc.PlayOneShot(sonidoBotonSFX);
     }
 }

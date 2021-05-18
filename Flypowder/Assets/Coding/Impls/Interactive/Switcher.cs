@@ -12,6 +12,7 @@ public class Switcher : Interactive
     [SerializeField]
     private float timer = -1;
     private float previusTime;
+    SFXManager sfxManager;
 
     private enum State
     {
@@ -23,6 +24,7 @@ public class Switcher : Interactive
     void Start()
     {
         animator = GetComponent<Animator>();
+        sfxManager = FindObjectOfType<SFXManager>();
 
     }
 
@@ -40,11 +42,13 @@ public class Switcher : Interactive
             {
                 TurnOff();
             }
+            
         }
         if (HasATimer() && TimerIsOut() && state == State.On) 
         {
             ChangeState();
             TurnOff();
+            
         }
     }
 
@@ -55,6 +59,9 @@ public class Switcher : Interactive
 
     private void ChangeState()
     {
+        sfxManager.playSonidoCorrediza();
+        sfxManager.playSonidoPalanca();
+        
         if (state == State.On)
             state = State.Off;
         else state = State.On;

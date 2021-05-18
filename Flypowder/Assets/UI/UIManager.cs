@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     private float startTime;
     private string mins;
     private string secs;
+    SFXManager sfxManager;
 
     [SerializeField]
     private FlyPowderSceneManager sceneManager;
@@ -32,6 +33,7 @@ public class UIManager : MonoBehaviour
         actualAmmo.text = "" + municionRestante;
         recargandoText.enabled = false;
         startTime = Time.time;
+        sfxManager = FindObjectOfType<SFXManager>();
     }
 
     // Update is called once per frame
@@ -98,18 +100,20 @@ public class UIManager : MonoBehaviour
 
     public void OnResumeClicked()
     {
-
+        sfxManager.playSonidoBoton();
         Time.timeScale = 1f;
         menuPausa.SetActive(false);
     }
 
     public void OnSalirClicked() {
+        sfxManager.playSonidoBoton();
         Time.timeScale = 1f;
         Application.Quit();
 
     }
     public void OnMenuClicked()
     {
+        sfxManager.playSonidoBoton();
         Time.timeScale = 1f;
         SceneManager.LoadScene("Inicio");
 

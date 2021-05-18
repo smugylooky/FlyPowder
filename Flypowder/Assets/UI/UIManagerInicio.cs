@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class UIManagerInicio : MonoBehaviour
 {
+    SFXManager sfxManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sfxManager = FindObjectOfType<SFXManager>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class UIManagerInicio : MonoBehaviour
 
     public void OnJugarClicked()
     {
+        sfxManager.playSonidoBoton();
         Time.timeScale = 1f;
         SceneManager.LoadScene("FirstLevel");
 
@@ -26,6 +28,7 @@ public class UIManagerInicio : MonoBehaviour
     }
     public void OnSalirClicked()
     {
+        sfxManager.playSonidoBoton();
         Time.timeScale = 1f;
         Application.Quit();
 
