@@ -12,7 +12,6 @@ public class Switcher : Interactive
     [SerializeField]
     private float timer = -1;
     private float previusTime;
-    SFXManager sfxManager;
 
     private enum State
     {

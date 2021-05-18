@@ -1495,7 +1495,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 306879168}
-        m_MethodName: OnJugarClicked
+        m_MethodName: OnSalirClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

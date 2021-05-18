@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -200,15 +201,15 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Stage hazard")
         {
-                  
-            this.transform.position = new Vector2(-65.51f, 6.87f);
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
         }
         if (collision.gameObject.tag == "NextLevel") 
         {
             sfxManager.playSonidoCambioMapa();
-            if (Application.loadedLevel == 3)
+            if (Application.loadedLevel == 1)
             { sceneManager.LoadSecondLevel(); }
-            else if (Application.loadedLevel == 4) { sceneManager.LoadThirdLevel(); }
+            else if (Application.loadedLevel == 2) { sceneManager.LoadThirdLevel(); }
         }
         if (collision.gameObject.tag == "terreno" || collision.gameObject.tag == "plataforma")
         {
