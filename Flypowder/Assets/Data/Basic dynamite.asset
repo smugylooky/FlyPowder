@@ -20,5 +20,5 @@ MonoBehaviour:
   activable: 0
   detonationTime: 3
   destroyOnImpact: 0
-  explosionRadius: 10
-  explosionForce: 75
+  explosionRadius: 25
+  explosionForce: 35

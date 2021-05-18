@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SecondaryObjectManager : MonoBehaviour
 {
-    public static SecondaryObjectBase secondaryObjectEquipada;
+    public SecondaryObjectBase secondaryObjectEquipada;
+    public GameObject dynamiteObject;
+    public GameObject weaponManager;
     private SFXManager sfxManager;
-    public SpriteRenderer spriteSecondary;
+    private SpriteRenderer spriteSecondary;
 
     private bool disparando;
     private bool hasSecundariaEquipada;
@@ -14,16 +16,23 @@ public class SecondaryObjectManager : MonoBehaviour
     private void Start()
     {
         sfxManager = GameObject.Find("SFXManager").GetComponent<SFXManager>();
+        spriteSecondary = GetComponentInChildren<SpriteRenderer>();
+        InitAllVars();
     }
 
     void Update()
     {
         if (secondaryObjectEquipada != null)
         {
+            weaponManager.SetActive(false);
             if (PlayerControls.isShooting(0))
             {
                 disparando = true;
             }
+        }
+        else
+        {
+            weaponManager.SetActive(true);
         }
     }
 
@@ -32,11 +41,16 @@ public class SecondaryObjectManager : MonoBehaviour
     {
         if (disparando)
         {
-            //Instanciar dinamita
+            GameObject dynamiteObjectClone = Instantiate(dynamiteObject);
+            dynamiteObjectClone.transform.position = transform.position;
+            dynamiteObjectClone.gameObject.GetComponent<Rigidbody2D>().AddForce((Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position).normalized * 30, ForceMode2D.Impulse);
+            disparando = false;
+            secondaryObjectEquipada = null;
+            spriteSecondary.sprite = null;
         }
     }
 
-    public static SecondaryObjectBase getSecondaryEquipped()
+    public SecondaryObjectBase getSecondaryEquipped()
     {
         return secondaryObjectEquipada;
     }
@@ -44,5 +58,17 @@ public class SecondaryObjectManager : MonoBehaviour
     public void setSecondaryEquipped(SecondaryObjectBase newSecundaria)
     {
         secondaryObjectEquipada = newSecundaria;
+        hasSecundariaEquipada = true;
+        InitAllVars();
+    }
+
+
+    public void InitAllVars()
+    {
+        disparando = false;
+        if (hasSecundariaEquipada)
+        {
+            spriteSecondary.sprite = secondaryObjectEquipada.objectSprite;
+        }
     }
 }
