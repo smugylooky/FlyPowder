@@ -79,7 +79,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &4179424717836861418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &6477389474758422978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &1196054236672984396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &8784993251554394593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 8932171003527350126}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -526,7 +526,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &2422146007667260955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 3624945524978940085}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -697,7 +697,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &8715476710153990819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &968095066329577252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &2322765388036289643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &6197907180847130280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,7 +999,7 @@ GameObject:
   - component: {fileID: 5202456476653729434}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1144,7 +1144,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &5337013141710179310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1236,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &1767302667140444333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1328,7 +1328,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &5066767471059236151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1420,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &686384917906110127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1574,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &8851888666915049449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,7 +1666,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &3429828508747454280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,7 +1758,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &7542059103146134558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 3375556672454016036}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1863,7 +1863,7 @@ GameObject:
   - component: {fileID: 4103419715923817101}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,7 +1979,7 @@ GameObject:
   - component: {fileID: 1952710354691112069}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2124,7 +2124,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &4659444517569873737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,7 +2216,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &8040957294841843392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,7 +2375,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &5977924156640547933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2467,7 +2467,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &8161756122528065047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2559,7 +2559,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &2563566573879549038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2651,7 +2651,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &2962138761764578557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2743,7 +2743,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &8014082281107730303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2835,7 +2835,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &4927470158895446320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2927,7 +2927,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &9040598302960236698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3019,7 +3019,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &1356010924261647357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3045,7 +3045,7 @@ GameObject:
   - component: {fileID: 6841690028592874609}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3190,7 +3190,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &4671632054822019008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,7 +3282,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &3313105788218374200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3374,7 +3374,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &8955607263425435171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,7 +3522,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &5179984899925556757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3614,7 +3614,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &8236625344175373765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3706,7 +3706,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &7999250871962449610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3798,7 +3798,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &5189143011355637473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3890,7 +3890,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &2255663522678288010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3982,7 +3982,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &841705992016856487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4008,7 +4008,7 @@ GameObject:
   - component: {fileID: 1767314270188035371}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4202,7 +4202,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &1823129821588267926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4294,7 +4294,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &8075355093158630233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4320,7 +4320,7 @@ GameObject:
   - component: {fileID: 471069958574650990}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4465,7 +4465,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &9021077248408024668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4557,7 +4557,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &4913250024938484363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4649,7 +4649,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &7670847360195022094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4801,7 +4801,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &5963060984368167357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4893,7 +4893,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &1923605156412299762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,7 +4985,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &932614491602320663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5077,7 +5077,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &486875021270308646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5169,7 +5169,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &1204320320188852834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5261,7 +5261,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &5908185213245406779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5287,7 +5287,7 @@ GameObject:
   - component: {fileID: 5079619964993361296}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5432,7 +5432,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &3938420068359648861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,7 +5524,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &7839605276179859457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5616,7 +5616,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &3573575029885393315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5708,7 +5708,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &6226024176978980389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5800,7 +5800,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &7570264862274824555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5892,7 +5892,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &3986202774007205247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5984,7 +5984,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &2642064811989621171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6076,7 +6076,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &815169875205266396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6168,7 +6168,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &8267280261950662449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6260,7 +6260,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &4047043661518625492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6352,7 +6352,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &1770650375621974347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6444,7 +6444,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &1549751188869272481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6536,7 +6536,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &5902673520480607409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6628,7 +6628,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &6722983496162364465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6720,7 +6720,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &2912225922960864422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6882,7 +6882,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &7050513262025358639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6974,7 +6974,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &1174104592142520360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7066,7 +7066,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &8333744967704232439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7158,7 +7158,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
 --- !u!114 &5009371508035124369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7184,7 +7184,7 @@ GameObject:
   - component: {fileID: 5172625623351058638}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7329,7 +7329,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
 --- !u!114 &8256450551047238615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7421,7 +7421,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
 --- !u!114 &4610157473935758975
 MonoBehaviour:
   m_ObjectHideFlags: 0

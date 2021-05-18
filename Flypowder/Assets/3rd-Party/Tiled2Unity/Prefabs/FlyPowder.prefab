@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4074172158755854999}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 4998449864550391128}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1759,7 +1759,7 @@ GameObject:
   - component: {fileID: 4236038918148252855}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1840,7 +1840,7 @@ GameObject:
   - component: {fileID: 6101005911582447983}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2658,7 +2658,7 @@ GameObject:
   - component: {fileID: 2468720842121794158}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 3263176344082780690}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2914,7 +2914,7 @@ GameObject:
   - component: {fileID: 4143933376380671771}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3415,7 +3415,7 @@ GameObject:
   - component: {fileID: 6708928900064112401}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3588,7 +3588,7 @@ GameObject:
   - component: {fileID: 2530194924509581900}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

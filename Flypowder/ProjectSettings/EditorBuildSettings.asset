@@ -9,18 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: 3f2682aba4cad4a4cb43439b35287027
   - enabled: 1
-    path: Assets/Scenes/UITestingScene.unity
-    guid: 203366132b1f05043936f9a51abb3f01
-  - enabled: 1
-    path: Assets/Scenes/TestingScene.unity
-    guid: f523370f1ede32443ae525d7e744db5d
-  - enabled: 1
     path: Assets/Scenes/FirstLevel.unity
     guid: 448887178ffab4540a347cb312f4f487
   - enabled: 1
     path: Assets/Scenes/SecondLevel.unity
     guid: 62e5772e561b8ad4c8aea7f10b2d96d7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ThirdLevel.unity
+    guid: 00858e67490770347a79cf6f870380b2
   m_configObjects: {}
