@@ -24,7 +24,7 @@ public class Switcher : Interactive
     void Start()
     {
         animator = GetComponent<Animator>();
-        sfxManager = FindObjectOfType<SFXManager>();
+        sfxManager = SFXManager.Instance;
 
     }
 

@@ -41,7 +41,7 @@ public class PlayerManager : MonoBehaviour
 
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        sfxManager = FindObjectOfType<SFXManager>();
+        sfxManager = SFXManager.Instance;
 
         velocidadActual = 0.0f;
         lastRBSpeed = 0.0f;

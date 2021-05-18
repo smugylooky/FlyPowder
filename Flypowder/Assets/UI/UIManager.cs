@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
         actualAmmo.text = "" + municionRestante;
         recargandoText.enabled = false;
         startTime = Time.time;
-        sfxManager = FindObjectOfType<SFXManager>();
+        sfxManager = SFXManager.Instance;
     }
 
     // Update is called once per frame

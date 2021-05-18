@@ -9,7 +9,7 @@ public class UIManagerInicio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sfxManager = FindObjectOfType<SFXManager>();
+        sfxManager = SFXManager.Instance;
     }
 
     // Update is called once per frame
