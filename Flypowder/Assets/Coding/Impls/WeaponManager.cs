@@ -90,7 +90,6 @@ public class WeaponManager : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, -normalizedCoords, distancia);
             line.SetPosition(0, transform.position);
-            //Debug.DrawLine(transform.position, transform.position + new Vector3(-normalizedCoords.x * distancia, -normalizedCoords.y *distancia, 0));
             line.SetPosition(1, transform.position + new Vector3(-normalizedCoords.x * distancia, -normalizedCoords.y * distancia, 0));
             if (hit.collider != null)
             {
@@ -136,9 +135,9 @@ public class WeaponManager : MonoBehaviour
         }
         private void DebugDatos()
         {
-            //Debug.Log("RATON: " + coordsRaton);
-            //Debug.Log("JUGADOR: " + playercoords);
-            //Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
+            Debug.Log("RATON: " + coordsRaton);
+            Debug.Log("JUGADOR: " + playercoords);
+            Debug.Log("RESTA TOTAL NORMALIZED: " + normalizedCoords);
         }
 
         public static int getMunicionActual()

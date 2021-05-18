@@ -9,6 +9,5 @@ public class SecondaryObjectBase : EquippableBase {
      * descripcion
      * sprite
     */
-
  
 }

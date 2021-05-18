@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SecondaryInventoryManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private SecondaryObjectBase secondaryObject;
+    
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

@@ -6,7 +6,6 @@ public class WeaponObject : MonoBehaviour
 {
     public WeaponBase armaObjeto;
     private SpriteRenderer renderSprites;
-    private int municionActual;
     void Start()
     {
         if (armaObjeto == null)
