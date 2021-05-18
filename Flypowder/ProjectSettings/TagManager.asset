@@ -10,6 +10,7 @@ TagManager:
   - armaPickup
   - pushable
   - NextLevel
+  - secondaryPickup
   layers:
   - Default
   - TransparentFX

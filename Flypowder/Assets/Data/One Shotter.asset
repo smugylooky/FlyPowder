@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: One Shotter
   descripcion: Gran disparo, pero solo una bala
+  objectSprite: {fileID: 594225973409634901, guid: 8e35ac46ffb7b61409668821ed52264e,
+    type: 3}
   balasCargadorMax: 1
   tipoDisparo: 1
   tiempoRecarga: 3
   tiempoEntreDisparos: 1
   retroceso: 45
-  spriteArma: {fileID: 5967756490848770951, guid: 8e35ac46ffb7b61409668821ed52264e,
-    type: 3}
-  sfx: 
